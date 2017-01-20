@@ -1,0 +1,822 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:soapui-project id="bc2b7807-bf1d-4cc3-bba6-f5c8e751ed7c" activeEnvironment="Default" name="IMTService" resourceRoot="" soapui-version="5.1.1" xmlns:con="http://eviware.com/soapui/config"><con:settings/><con:interface xsi:type="con:WsdlInterface" id="264f9667-80ad-48a2-81be-848fb6a1f021" wsaVersion="NONE" name="IMTServiceHttpBinding" type="wsdl" bindingName="{http://www.quantiguous.com/services}IMTServiceHttpBinding" soapVersion="1_2" anonymous="optional" definition="https://api.quantiguous.com/IMTService?wsdl" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache type="TEXT" rootPart="https://api.quantiguous.com/IMTService?wsdl"><con:part><con:url>https://api.quantiguous.com/IMTService?wsdl</con:url><con:content><![CDATA[<wsdl:definitions name="IMTService" targetNamespace="http://www.quantiguous.com/services" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:tns="http://www.quantiguous.com/services" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <wsdl:documentation>
+    <wsdl:appinfo source="WMQI_APPINFO">
+      <MRWSDLAppInfo imported="true">
+        <binding hasEncoding="false" imported="true" name="IMTServiceHttpBinding" originalBindingStyle="document"/>
+        <generatedXSD location="IMTService_InlineSchema1.xsd"/>
+      </MRWSDLAppInfo>
+    </wsdl:appinfo>
+  </wsdl:documentation>
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://www.quantiguous.com/services" xmlns:ibmSchExtn="http://www.ibm.com/schema/extensions">
+      <xsd:include schemaLocation="http://api.quantiguous.com/IMTService?xsd=xsd0"/>
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="addBeneficiaryRequestMsg">
+    <wsdl:part element="tns:addBeneficiary" name="addBeneficiaryParameters"/>
+  </wsdl:message>
+  <wsdl:message name="addBeneficiaryResponseMsg">
+    <wsdl:part element="tns:addBeneficiaryResponse" name="addBeneficiaryResult"/>
+  </wsdl:message>
+  <wsdl:message name="deleteBeneficiaryRequestMsg">
+    <wsdl:part element="tns:deleteBeneficiary" name="deleteBeneficiaryParameters"/>
+  </wsdl:message>
+  <wsdl:message name="deleteBeneficiaryResponseMsg">
+    <wsdl:part element="tns:deleteBeneficiaryResponse" name="deleteBeneficiaryResult"/>
+  </wsdl:message>
+  <wsdl:message name="initiateTransferRequestMsg">
+    <wsdl:part element="tns:initiateTransfer" name="initiateTransferParameters"/>
+  </wsdl:message>
+  <wsdl:message name="initiateTransferResponseMsg">
+    <wsdl:part element="tns:initiateTransferResponse" name="initiateTransferResult"/>
+  </wsdl:message>
+  <wsdl:message name="getTransferStatusRequestMsg">
+    <wsdl:part element="tns:getTransferStatus" name="getTransferStatusParameters"/>
+  </wsdl:message>
+  <wsdl:message name="getTransferStatusResponseMsg">
+    <wsdl:part element="tns:getTransferStatusResponse" name="getTransferStatusResult"/>
+  </wsdl:message>
+  <wsdl:message name="cancelTransferRequestMsg">
+    <wsdl:part element="tns:cancelTransfer" name="cancelTransferParameters"/>
+  </wsdl:message>
+  <wsdl:message name="cancelTransferResponseMsg">
+    <wsdl:part element="tns:cancelTransferResponse" name="cancelTransferResult"/>
+  </wsdl:message>
+  <wsdl:message name="getBeneficiariesRequestMsg">
+    <wsdl:part element="tns:getBeneficiaries" name="getBeneficiariesParameters"/>
+  </wsdl:message>
+  <wsdl:message name="getBeneficiariesResponseMsg">
+    <wsdl:part element="tns:getBeneficiariesResponse" name="getBeneficiariesResult"/>
+  </wsdl:message>
+  <wsdl:portType name="IMTService">
+    <wsdl:operation name="addBeneficiary">
+      <wsdl:documentation>To add a beneficiary for IMT. Only registered beneficiares can be used for initiateTransfer . A beneficiary is identified by a mobile no, adding the same beneficiary again is not allowed.</wsdl:documentation>
+      <wsdl:input message="tns:addBeneficiaryRequestMsg" name="addBeneficiaryRequest"/>
+      <wsdl:output message="tns:addBeneficiaryResponseMsg" name="addBeneficiaryResponse"/>
+    </wsdl:operation>
+    <wsdl:operation name="deleteBeneficiary">
+      <wsdl:documentation>To delete a previously registered beneficiary. Once cancelled no further transactions are allowed. Existing transfers, that are in process, will complete.</wsdl:documentation>
+      <wsdl:input message="tns:deleteBeneficiaryRequestMsg" name="deleteBeneficiaryRequest"/>
+      <wsdl:output message="tns:deleteBeneficiaryResponseMsg" name="deleteBeneficiaryResponse"/>
+    </wsdl:operation>
+    <wsdl:operation name="initiateTransfer">
+      <wsdl:documentation>To initiate an IMT for a registered beneficiary. Once initiated, the transaction will either complete, or expire. Initiated transfers can be called via the cancelTransfer operation, before they are completed.</wsdl:documentation>
+      <wsdl:input message="tns:initiateTransferRequestMsg" name="initiateTransferRequest"/>
+      <wsdl:output message="tns:initiateTransferResponseMsg" name="initiateTransferResponse"/>
+    </wsdl:operation>
+    <wsdl:operation name="getTransferStatus">
+      <wsdl:documentation>To get the current status from the lifecycle of an IMT transfer. The transfer can be fetched basis the uniqueRequestNo of the initiateTransfer, as well as the imtReferenceNo.</wsdl:documentation>
+      <wsdl:input message="tns:getTransferStatusRequestMsg" name="getTransferStatusRequest"/>
+      <wsdl:output message="tns:getTransferStatusResponseMsg" name="getTransferStatusResponse"/>
+    </wsdl:operation>
+    <wsdl:operation name="cancelTransfer">
+      <wsdl:documentation>To cancel a previously initiated IMT. Cancellations are allowed only for those transfers that were initiated by the service.</wsdl:documentation>
+      <wsdl:input message="tns:cancelTransferRequestMsg" name="cancelTransferRequest"/>
+      <wsdl:output message="tns:cancelTransferResponseMsg" name="cancelTransferResponse"/>
+    </wsdl:operation>
+    <wsdl:operation name="getBeneficiaries">
+      <wsdl:documentation>To get the list of registered beneficiaries, optionally a date criteria can be specified to restrict results to beneficiaries registered for a given date range.</wsdl:documentation>
+      <wsdl:input message="tns:getBeneficiariesRequestMsg" name="getBeneficiariesRequest"/>
+      <wsdl:output message="tns:getBeneficiariesResponseMsg" name="getBeneficiariesResponse"/>
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="IMTServiceHttpBinding" type="tns:IMTService">
+    <soap12:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="addBeneficiary">
+      <soap12:operation soapAction="http://www.quantiguous.com/services/IMTService/addBeneficiary"/>
+      <wsdl:input name="addBeneficiaryRequest">
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="addBeneficiaryResponse">
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="deleteBeneficiary">
+      <soap12:operation soapAction="http://www.quantiguous.com/services/IMTService/deleteBeneficiary"/>
+      <wsdl:input name="deleteBeneficiaryRequest">
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="deleteBeneficiaryResponse">
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="initiateTransfer">
+      <soap12:operation soapAction="http://www.quantiguous.com/services/IMTService/initiateTransfer"/>
+      <wsdl:input name="initiateTransferRequest">
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="initiateTransferResponse">
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getTransferStatus">
+      <soap12:operation soapAction="http://www.quantiguous.com/services/IMTService/getTransferStatus"/>
+      <wsdl:input name="getTransferStatusRequest">
+        <soap12:body parts="getTransferStatusParameters" use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="getTransferStatusResponse">
+        <soap12:body parts="getTransferStatusResult" use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="cancelTransfer">
+      <soap12:operation soapAction="http://www.quantiguous.com/services/IMTService/cancelTransfer"/>
+      <wsdl:input name="cancelTransferRequest">
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="cancelTransferResponse">
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getBeneficiaries">
+      <soap12:operation soapAction="http://www.quantiguous.com/services/IMTService/getBeneficiaries"/>
+      <wsdl:input name="getBeneficiariesRequest">
+        <soap12:body parts="getBeneficiariesParameters" use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="getBeneficiariesResponse">
+        <soap12:body parts="getBeneficiariesResult" use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="IMTServiceHttpService">
+    <wsdl:port binding="tns:IMTServiceHttpBinding" name="IMTServiceHttpPort">
+      <soap12:address location="http://api.quantiguous.com/IMTService"/>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>]]></con:content><con:type>http://schemas.xmlsoap.org/wsdl/</con:type></con:part><con:part><con:url>http://api.quantiguous.com/IMTService?xsd=xsd0</con:url><con:content><![CDATA[<xsd:schema elementFormDefault="qualified" targetNamespace="http://www.quantiguous.com/services" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:ibmSchExtn="http://www.ibm.com/schema/extensions" xmlns:tns="http://www.quantiguous.com/services">
+  <xsd:element ibmSchExtn:docRoot="true" name="addBeneficiary">
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:element ref="tns:version"/>
+        <xsd:element ref="tns:uniqueRequestNo"/>
+        <xsd:element ref="tns:appID"/>
+        <xsd:element ref="tns:customerID"/>
+        <xsd:element ref="tns:beneficiaryMobileNo"/>
+        <xsd:element name="beneficiaryName" type="tns:nameType1">
+          <xsd:annotation>
+            <xsd:documentation>The beneficiary name</xsd:documentation>
+          </xsd:annotation>
+        </xsd:element>
+        <xsd:element name="beneficiaryAddress" type="tns:beneficiaryAddressType">
+          <xsd:annotation>
+            <xsd:documentation>The address of the beneficiary</xsd:documentation>
+          </xsd:annotation>
+        </xsd:element>
+      </xsd:sequence>
+    </xsd:complexType>
+  </xsd:element>
+  <xsd:element ibmSchExtn:docRoot="true" name="addBeneficiaryResponse">
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:element ref="tns:version"/>
+        <xsd:element ref="tns:uniqueResponseNo"/>
+      </xsd:sequence>
+    </xsd:complexType>
+  </xsd:element>
+  <xsd:element ibmSchExtn:docRoot="true" name="deleteBeneficiary">
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:element ref="tns:version"/>
+        <xsd:element ref="tns:uniqueRequestNo"/>
+        <xsd:element ref="tns:appID"/>
+        <xsd:element ref="tns:customerID"/>
+        <xsd:element ref="tns:beneficiaryMobileNo"/>
+      </xsd:sequence>
+    </xsd:complexType>
+  </xsd:element>
+  <xsd:element ibmSchExtn:docRoot="true" name="deleteBeneficiaryResponse">
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:element ref="tns:version"/>
+        <xsd:element ref="tns:uniqueResponseNo"/>
+      </xsd:sequence>
+    </xsd:complexType>
+  </xsd:element>
+  <xsd:element ibmSchExtn:docRoot="true" name="initiateTransfer">
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:element ref="tns:version"/>
+        <xsd:element ref="tns:uniqueRequestNo"/>
+        <xsd:element ref="tns:appID"/>
+        <xsd:element ref="tns:customerID"/>
+        <xsd:element ref="tns:beneficiaryMobileNo"/>
+        <xsd:element name="transferAmount">
+          <xsd:annotation>
+            <xsd:documentation>The transfer Amount. A maximum of 10000 (inclusive)
+					is allowed. The amount needs to be in multiples of
+					100 as the withdrawal is via ATMs</xsd:documentation>
+          </xsd:annotation>
+          <xsd:simpleType>
+            <xsd:restriction base="tns:imtTransferAmountType">
+              <xsd:pattern value="\d*00"/>
+            </xsd:restriction>
+          </xsd:simpleType>
+        </xsd:element>
+        <xsd:element name="passCode" type="tns:passCodeType">
+          <xsd:annotation>
+            <xsd:documentation>The passcode, this is shared with the beneficiary, and is needed for funds withdrawal from the ATM.</xsd:documentation>
+          </xsd:annotation>
+        </xsd:element>
+        <xsd:element name="remitterToBeneficiaryInfo" type="tns:remitterToBeneficiaryInfoType">
+          <xsd:annotation>
+            <xsd:documentation>A friendly note from the remitter to the beneficiary. This is forwarded to the beneficiaries bank, for certain transation types.</xsd:documentation>
+          </xsd:annotation>
+        </xsd:element>
+      </xsd:sequence>
+    </xsd:complexType>
+  </xsd:element>
+  <xsd:element ibmSchExtn:docRoot="true" name="initiateTransferResponse">
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:element ref="tns:version"/>
+        <xsd:element ref="tns:uniqueResponseNo"/>
+        <xsd:element ref="tns:initiateTransferResult"/>
+      </xsd:sequence>
+    </xsd:complexType>
+  </xsd:element>
+  <xsd:element ibmSchExtn:docRoot="true" name="getTransferStatus">
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:element ref="tns:version"/>
+        <xsd:element ref="tns:appID"/>
+        <xsd:element ref="tns:customerID"/>
+        <xsd:choice>
+          <xsd:annotation>
+            <xsd:documentation>One of initiateTransferRequestNo or imtReferenceNo is needed to inquire on the transfer</xsd:documentation>
+          </xsd:annotation>
+          <xsd:element name="initiateTransferRequestNo" type="tns:referenceNoType">
+            <xsd:annotation>
+              <xsd:documentation>The uniqueRequestNo of the transfer, that is being inquired.</xsd:documentation>
+            </xsd:annotation>
+          </xsd:element>
+          <xsd:element name="imtReferenceNo" type="tns:referenceNoType">
+            <xsd:annotation>
+              <xsd:documentation>The imtReferenceNo that is being inquired.</xsd:documentation>
+            </xsd:annotation>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:sequence>
+    </xsd:complexType>
+  </xsd:element>
+  <xsd:element ibmSchExtn:docRoot="true" name="getTransferStatusResponse">
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:element ref="tns:version"/>
+        <xsd:element name="transferStatus" type="tns:IMTTransferStatus"/>
+      </xsd:sequence>
+    </xsd:complexType>
+  </xsd:element>
+  <xsd:element ibmSchExtn:docRoot="true" name="cancelTransfer">
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:element ref="tns:version"/>
+        <xsd:element ref="tns:uniqueRequestNo"/>
+        <xsd:element ref="tns:appID"/>
+        <xsd:element ref="tns:customerID"/>
+        <xsd:element name="initiateTransferRequestNo" type="tns:referenceNoType">
+          <xsd:annotation>
+            <xsd:documentation>The uniqueRequestNo of an earlier completed transfer transaction, that needs to be cancelled.</xsd:documentation>
+          </xsd:annotation>
+        </xsd:element>
+        <xsd:element name="reasonToCancel" type="tns:cancelReasonType">
+          <xsd:annotation>
+            <xsd:documentation>The reason to cancel the transfer. This is for reporting/MIS, it is not sent to the beneficiary.</xsd:documentation>
+          </xsd:annotation>
+        </xsd:element>
+      </xsd:sequence>
+    </xsd:complexType>
+  </xsd:element>
+  <xsd:element ibmSchExtn:docRoot="true" name="cancelTransferResponse">
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:element ref="tns:version"/>
+        <xsd:element ref="tns:uniqueResponseNo"/>
+        <xsd:element ref="tns:cancelResult"/>
+      </xsd:sequence>
+    </xsd:complexType>
+  </xsd:element>
+  <xsd:element name="initiateTransferResult" type="tns:initiateTransferResultType"/>
+  <xsd:complexType name="initiateTransferResultType">
+    <xsd:sequence>
+      <xsd:element name="bankReferenceNo" type="tns:referenceNoType">
+        <xsd:annotation>
+          <xsd:documentation>The reference number generated by the bank, and passed on to the payment network.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
+      <xsd:element name="imtReferenceNo" type="tns:referenceNoType">
+        <xsd:annotation>
+          <xsd:documentation>The reference number generated by IMT.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:element name="cancelResult" type="tns:cancelResultType"></xsd:element>
+  <xsd:complexType name="cancelResultType">
+    <xsd:sequence>
+      <xsd:element name="imtReferenceNo" type="tns:referenceNoType">
+        <xsd:annotation>
+          <xsd:documentation>The reference no of the transfer that has been cancelled.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
+      <xsd:element name="bankReferenceNo" type="tns:referenceNoType"/>
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="transactionResultType">
+    <xsd:sequence>
+      <xsd:element name="operationName" type="xsd:string"/>
+      <xsd:element ref="tns:uniqueResponseNo"/>
+      <xsd:choice>
+        <xsd:element ref="tns:initiateTransferResult"/>
+        <xsd:element ref="tns:cancelResult"/>
+      </xsd:choice>
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="IMTTransferStatus">
+    <xsd:sequence>
+      <xsd:element name="imtReferenceNo" type="tns:referenceNoType">
+        <xsd:annotation>
+          <xsd:documentation>The unique reference no assigned by IMT to this transfer.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
+      <xsd:element name="statusCode">
+        <xsd:annotation>
+          <xsd:documentation>The status of this transfer</xsd:documentation>
+        </xsd:annotation>
+        <xsd:simpleType>
+          <xsd:restriction base="xsd:string">
+            <xsd:enumeration value="INITIATED"/>
+            <xsd:enumeration value="COMPLETED"/>
+            <xsd:enumeration value="EXPIRED"/>
+            <xsd:enumeration value="CANCELLED"/>
+          </xsd:restriction>
+        </xsd:simpleType>
+      </xsd:element>
+      <xsd:element ref="tns:customerID"/>
+      <xsd:element ref="tns:beneficiaryMobileNo"/>
+      <xsd:element name="transferAmount" type="tns:positiveFloat">
+        <xsd:annotation>
+          <xsd:documentation>The transfer Amount</xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
+      <xsd:element name="remitterToBeneficiaryInfo" type="tns:remitterToBeneficiaryInfoType">
+        <xsd:annotation>
+          <xsd:documentation>A friendly note from the remitter to the beneficiary. This is forwarded to the beneficiaries bank, for certain transation types.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
+      <xsd:element name="expiryDate" type="xsd:date">
+        <xsd:annotation>
+          <xsd:documentation>The date by which the transfer will expire.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
+      <xsd:element name="initiatedAt" type="xsd:date">
+        <xsd:annotation>
+          <xsd:documentation>The date when the transfer was initiated</xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
+      <xsd:choice minOccurs="0">
+        <xsd:element name="completedAt" type="xsd:date">
+          <xsd:annotation>
+            <xsd:documentation>The date when the transfer completed</xsd:documentation>
+          </xsd:annotation>
+        </xsd:element>
+        <xsd:element name="cancelledAt" type="xsd:date">
+          <xsd:annotation>
+            <xsd:documentation>The date the transfer was cancelled</xsd:documentation>
+          </xsd:annotation>
+        </xsd:element>
+        <xsd:element name="expiredDate" type="xsd:date">
+          <xsd:annotation>
+            <xsd:documentation>The date the transfer expired</xsd:documentation>
+          </xsd:annotation>
+        </xsd:element>
+      </xsd:choice>
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="transactionStatusType">
+    <xsd:sequence>
+      <xsd:element name="statusCode">
+        <xsd:annotation>
+          <xsd:documentation>The status of the transaction</xsd:documentation>
+        </xsd:annotation>
+        <xsd:simpleType>
+          <xsd:restriction base="xsd:token">
+            <xsd:enumeration value="NEW"/>
+            <xsd:enumeration value="FAILED"/>
+            <xsd:enumeration value="COMPLETED"/>
+          </xsd:restriction>
+        </xsd:simpleType>
+      </xsd:element>
+      <xsd:element minOccurs="0" name="Fault" type="tns:FaultType">
+        <xsd:annotation>
+          <xsd:documentation>The Fault reporting structure. This is identical to the structure returned in the Soap fault, but in the standard namespace, and not  http://www.w3.org/2003/05/soap-envelope</xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:simpleType name="FaultCodeValueType">
+    <xsd:restriction base="xsd:QName"></xsd:restriction>
+  </xsd:simpleType>
+  <xsd:element name="Subcode" type="tns:FaultSubcodeType">
+    <xsd:annotation>
+      <xsd:documentation>The response code, the value is a QName, the qualifier represents the namespace of the system that owns the code, followed by the value.</xsd:documentation>
+    </xsd:annotation>
+  </xsd:element>
+  <xsd:complexType name="FaultSubcodeType">
+    <xsd:sequence>
+      <xsd:element name="Value" type="xsd:QName"/>
+      <xsd:element minOccurs="0" ref="tns:Subcode"/>
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="FaultType">
+    <xsd:sequence>
+      <xsd:element name="Code">
+        <xsd:annotation>
+          <xsd:documentation>The fault code, the value is one of the standard values defined in soap 1.2 specification. The value of the Subcode element is one of the high level error codes returned by the service. These codes are useful for most customers. Multiple child Subcode elements may be present, with increasing lower level detailed error codes.</xsd:documentation>
+        </xsd:annotation>
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="Value" type="tns:FaultCodeValueType"/>
+            <xsd:element ref="tns:Subcode"/>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="Reason">
+        <xsd:annotation>
+          <xsd:documentation>The human readable reason text, representing the error detail.</xsd:documentation>
+        </xsd:annotation>
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element maxOccurs="unbounded" name="Text">
+              <xsd:complexType>
+                <xsd:simpleContent>
+                  <xsd:extension base="xsd:string">
+                    <xsd:attribute name="lang" type="xsd:language" use="required"/>
+                  </xsd:extension>
+                </xsd:simpleContent>
+              </xsd:complexType>
+            </xsd:element>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:simpleType name="remitterToBeneficiaryInfoType">
+    <xsd:annotation>
+      <xsd:documentation>The minimum length of 2 is as per bank end systems.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:restriction base="xsd:string">
+      <xsd:minLength value="2"/>
+      <xsd:maxLength value="120"/>
+      <xsd:pattern value="(\w|\s|\.|,|-)*"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+  <xsd:simpleType name="cancelReasonType">
+    <xsd:restriction base="xsd:string">
+      <xsd:minLength value="1"/>
+      <xsd:maxLength value="120"/>
+      <xsd:pattern value="(\w|\s|\.|,|-)*"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+  <xsd:simpleType name="passCodeType">
+    <xsd:restriction base="xsd:string">
+      <xsd:length value="4"/>
+      <xsd:pattern value="\d{4}"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+  <xsd:complexType name="beneficiaryAddressType">
+    <xsd:sequence>
+      <xsd:element name="addressLine" type="tns:addressLineType">
+        <xsd:annotation>
+          <xsd:documentation>The address line.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
+      <xsd:element name="cityName" type="tns:cityNameType">
+        <xsd:annotation>
+          <xsd:documentation>The city name of the address.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
+      <xsd:element name="postalCode" type="tns:postalCodeType">
+        <xsd:annotation>
+          <xsd:documentation>The postal code of the address .</xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:simpleType name="addressLineType">
+    <xsd:restriction base="xsd:string">
+      <xsd:minLength value="1"/>
+      <xsd:maxLength value="35"/>
+      <xsd:pattern value="(&quot;|(|)|:|\?|\{|\}|!|@|#|\|%|!|\w|\.|-|/| )*"></xsd:pattern>
+    </xsd:restriction>
+  </xsd:simpleType>
+  <xsd:element name="beneficiaryMobileNo" type="tns:mobileNoType">
+    <xsd:annotation>
+      <xsd:documentation>The mobile no of the beneficiary.</xsd:documentation>
+    </xsd:annotation>
+  </xsd:element>
+  <xsd:simpleType name="mobileNoType">
+    <xsd:restriction base="xsd:string">
+      <xsd:minLength value="7"/>
+      <xsd:maxLength value="16"/>
+      <xsd:whiteSpace value="collapse"/>
+      <xsd:pattern value="\d{7,16}"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+  <xsd:element name="customerID" type="tns:customerIDType">
+    <xsd:annotation>
+      <xsd:documentation>The customer ID that is allocated to the corporate, accessing the service.</xsd:documentation>
+    </xsd:annotation>
+  </xsd:element>
+  <xsd:simpleType name="customerIDType">
+    <xsd:restriction base="xsd:string">
+      <xsd:minLength value="3"/>
+      <xsd:maxLength value="10"/>
+      <xsd:pattern value="\d*"/>
+      <xsd:whiteSpace value="collapse"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+  <xsd:element name="version" type="tns:versionType">
+    <xsd:annotation>
+      <xsd:documentation>When sent in the request, this reflects the version that is known to the client. Clients should always send a value that they were developed with. When sent in the reply, this reflects the version that is known to the server. This is updated whenever there is a change in the specification or the behavior of the server. These versions are not required to match, and are to be used to when dealing with compatibility issues.</xsd:documentation>
+    </xsd:annotation>
+  </xsd:element>
+  <xsd:element name="uniqueRequestNo">
+    <xsd:annotation>
+      <xsd:documentation>A unique reference number to be sent by the client
+				application. The API ensures that duplicate requests are
+				rejected. It is the responsibility of the client to
+				ensure that a unique reference is always generated. A
+				UUID may be used if no other mechanism is available.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:simpleType>
+      <xsd:restriction base="tns:referenceNoType">
+        <xsd:pattern value="\w*"/>
+      </xsd:restriction>
+    </xsd:simpleType>
+  </xsd:element>
+  <xsd:element name="uniqueResponseNo" type="tns:referenceNoType">
+    <xsd:annotation>
+      <xsd:documentation>A unique reference number that is sent back by the API. This reference number can be used to inquire about the status of a request, and is usually presented on a user interface.. A UUID may be returned if no other mechanism is available.</xsd:documentation>
+    </xsd:annotation>
+  </xsd:element>
+  <xsd:simpleType name="versionType">
+    <xsd:restriction base="xsd:string">
+      <xsd:minLength value="1"/>
+      <xsd:maxLength value="5"/>
+      <xsd:pattern value="\d.*"/>
+      <xsd:whiteSpace value="collapse"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+  <xsd:simpleType name="referenceNoType">
+    <xsd:restriction base="xsd:string">
+      <xsd:maxLength value="32"/>
+      <xsd:minLength value="1"/>
+      <xsd:whiteSpace value="collapse"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+  <xsd:simpleType name="nonNegativeFloat">
+    <xsd:restriction base="xsd:float">
+      <xsd:minInclusive value="0"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+  <xsd:simpleType name="positiveFloat">
+    <xsd:restriction base="xsd:float">
+      <xsd:minExclusive value="0"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+  <xsd:simpleType name="imtTransferAmountType">
+    <xsd:restriction base="tns:positiveFloat">
+      <xsd:maxInclusive value="10000"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+  <xsd:simpleType name="emailIDType">
+    <xsd:restriction base="xsd:string">
+      <xsd:minLength value="3"/>
+      <xsd:maxLength value="100"/>
+      <xsd:pattern value=".+@.+"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+  <xsd:simpleType name="postalCodeType">
+    <xsd:restriction base="xsd:string">
+      <xsd:minLength value="1"/>
+      <xsd:maxLength value="15"/>
+      <xsd:pattern value="(\d)*"></xsd:pattern>
+    </xsd:restriction>
+  </xsd:simpleType>
+  <xsd:simpleType name="cityNameType">
+    <xsd:restriction base="xsd:string">
+      <xsd:minLength value="1"/>
+      <xsd:maxLength value="50"/>
+      <xsd:pattern value="(&quot;|(|)|:|\?|\{|\}|!|@|#|\|%|!|\w|\.|-| )*"></xsd:pattern>
+    </xsd:restriction>
+  </xsd:simpleType>
+  <xsd:simpleType name="stateOrProvinceNameType">
+    <xsd:restriction base="xsd:string">
+      <xsd:minLength value="1"/>
+      <xsd:maxLength value="50"/>
+      <xsd:pattern value="(&quot;|(|)|:|\?|\{|\}|!|@|#|\|%|!|\w|\.|-| )*"></xsd:pattern>
+    </xsd:restriction>
+  </xsd:simpleType>
+  <xsd:simpleType name="proxyCardNumberType">
+    <xsd:restriction base="xsd:string"/>
+  </xsd:simpleType>
+  <xsd:simpleType name="titleType">
+    <xsd:restriction base="xsd:string">
+      <xsd:enumeration value="Mr"/>
+      <xsd:enumeration value="Mrs"/>
+      <xsd:enumeration value="Miss"/>
+      <xsd:enumeration value="Dr"/>
+      <xsd:enumeration value="Madam"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+  <xsd:simpleType name="genderType">
+    <xsd:restriction base="xsd:string">
+      <xsd:enumeration value="male"/>
+      <xsd:enumeration value="female"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+  <xsd:element name="appID" type="tns:appIDType">
+    <xsd:annotation>
+      <xsd:documentation>A unique ID assigned to every application. The appID should be enabled and valid in the back end systems for the transactions to proceed.</xsd:documentation>
+    </xsd:annotation>
+  </xsd:element>
+  <xsd:simpleType name="appIDType">
+    <xsd:restriction base="xsd:string">
+      <xsd:minLength value="5"/>
+      <xsd:maxLength value="20"/>
+      <xsd:pattern value="\w*"/>
+      <xsd:whiteSpace value="collapse"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+  <xsd:simpleType name="nameType">
+    <xsd:restriction base="xsd:string">
+      <xsd:minLength value="1"/>
+      <xsd:maxLength value="50"/>
+      <xsd:pattern value="[a-z|A-Z]*"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+  <xsd:simpleType name="nameType1">
+    <xsd:restriction base="xsd:string">
+      <xsd:whiteSpace value="collapse"/>
+      <xsd:minLength value="1"/>
+      <xsd:maxLength value="50"/>
+      <xsd:pattern value="[a-z|A-Z|\s]*"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+  <xsd:element ibmSchExtn:docRoot="true" name="getBeneficiaries">
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:element ref="tns:version"/>
+        <xsd:element ref="tns:appID"/>
+        <xsd:element ref="tns:customerID"/>
+        <xsd:element minOccurs="0" name="dateRange">
+          <xsd:annotation>
+            <xsd:documentation>Optionally, specify a date range to retrieve beneficiaries that were registered in that period. Both date(fromDate and toDate are inclusive).</xsd:documentation>
+          </xsd:annotation>
+          <xsd:complexType>
+            <xsd:sequence>
+              <xsd:element name="fromDate" type="xsd:date">
+                <xsd:annotation>
+                  <xsd:documentation>The starting date of the date range.</xsd:documentation>
+                </xsd:annotation>
+              </xsd:element>
+              <xsd:element name="toDate" type="xsd:date">
+                <xsd:annotation>
+                  <xsd:documentation>The last date of the date range.</xsd:documentation>
+                </xsd:annotation>
+              </xsd:element>
+            </xsd:sequence>
+          </xsd:complexType>
+        </xsd:element>
+        <xsd:element name="numBeneficiaries" type="xsd:positiveInteger">
+          <xsd:annotation>
+            <xsd:documentation>The number of beneficiaries to be returned. The result will be limited to this number. Note that there is no criteria available to select the latest, oldest, or frequently used beneficiaries.</xsd:documentation>
+          </xsd:annotation>
+        </xsd:element>
+      </xsd:sequence>
+    </xsd:complexType>
+  </xsd:element>
+  <xsd:element ibmSchExtn:docRoot="true" name="getBeneficiariesResponse">
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:element ref="tns:version"/>
+        <xsd:element name="numBeneficiaries" type="xsd:nonNegativeInteger">
+          <xsd:annotation>
+            <xsd:documentation>The number of beneficiaries in the result set. This is never more than the limit specified in the request.</xsd:documentation>
+          </xsd:annotation>
+        </xsd:element>
+        <xsd:element name="beneficiariesArray" type="tns:beneficiaryArrayType"/>
+      </xsd:sequence>
+    </xsd:complexType>
+  </xsd:element>
+  <xsd:complexType name="beneficiaryArrayType">
+    <xsd:sequence>
+      <xsd:element maxOccurs="unbounded" minOccurs="0" name="beneficiary" type="tns:beneficiaryType"/>
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="beneficiaryType">
+    <xsd:sequence>
+      <xsd:element name="beneficiaryName" type="tns:nameType">
+        <xsd:annotation>
+          <xsd:documentation>full name of the beneficiary</xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
+      <xsd:element name="beneficiaryMobileNo" type="tns:mobileNoType">
+        <xsd:annotation>
+          <xsd:documentation>the mobile No of the beneficiary</xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
+      <xsd:element name="registrationDate" type="xsd:date">
+        <xsd:annotation>
+          <xsd:documentation>The date when beneficiary is registered</xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
+      <xsd:element name="addressLine" type="tns:addressLineType">
+        <xsd:annotation>
+          <xsd:documentation>the address of the beneficiary</xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
+      <xsd:element name="postalCode" type="tns:postalCodeType">
+        <xsd:annotation>
+          <xsd:documentation>The pin code of the beneficiary's city</xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
+    </xsd:sequence>
+  </xsd:complexType>
+</xsd:schema>]]></con:content><con:type>http://www.w3.org/2001/XMLSchema</con:type></con:part></con:definitionCache><con:endpoints><con:endpoint>http://api.quantiguous.com/IMTService</con:endpoint></con:endpoints><con:operation id="2906bc80-0ed3-42ca-b0e0-9f3edc0b8f59" isOneWay="false" action="http://www.quantiguous.com/services/IMTService/addBeneficiary" name="addBeneficiary" bindingOperationName="addBeneficiary" type="Request-Response" outputName="addBeneficiaryResponse" inputName="addBeneficiaryRequest" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="89c0baf4-e8fb-45ac-914f-6e88f7ded217" name="Request 1"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>https://api.quantiguous.com/IMTService</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:ser="http://www.quantiguous.com/services">
+   <soap:Header/>
+   <soap:Body>
+      <ser:addBeneficiary>
+         <ser:version>1</ser:version>
+         <ser:uniqueRequestNo>imt6</ser:uniqueRequestNo>
+         <ser:appID>app1212</ser:appID>
+         <ser:customerID>2424</ser:customerID>
+         <ser:beneficiaryMobileNo>7079775959</ser:beneficiaryMobileNo>
+         <ser:beneficiaryName>Naveen Pokuri</ser:beneficiaryName>
+         <ser:beneficiaryAddress>
+            <ser:addressLine>12</ser:addressLine>
+            <ser:cityName>Mumbai</ser:cityName>
+            <ser:postalCode>400064</ser:postalCode>
+         </ser:beneficiaryAddress>
+      </ser:addBeneficiary>
+   </soap:Body>
+</soap:Envelope>]]></con:request><con:credentials><con:username>guest</con:username><con:password>qg123$#</con:password><con:selectedAuthProfile>Basic</con:selectedAuthProfile><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:authType>Global HTTP Settings</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.quantiguous.com/services/IMTService/addBeneficiaryRequest"/><con:wsrmConfig version="1.2"/></con:call></con:operation><con:operation id="bf36adbd-8499-4c55-bb7e-7999578bf505" isOneWay="false" action="http://www.quantiguous.com/services/IMTService/cancelTransfer" name="cancelTransfer" bindingOperationName="cancelTransfer" type="Request-Response" outputName="cancelTransferResponse" inputName="cancelTransferRequest" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="d888db3a-7536-40fd-9c61-69757df13fd3" name="Request 1"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>https://api.quantiguous.com/IMTService</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:ser="http://www.quantiguous.com/services">
+   <soap:Header/>
+   <soap:Body>
+      <ser:cancelTransfer>
+         <ser:version>1.0</ser:version>
+         <ser:uniqueRequestNo>12360</ser:uniqueRequestNo>
+         <ser:appID>app1212</ser:appID>
+         <ser:customerID>2424</ser:customerID>
+         <ser:initiateTransferRequestNo>URN198008304999806078</ser:initiateTransferRequestNo>
+         <ser:reasonToCancel>myTransactionMyrules</ser:reasonToCancel>
+      </ser:cancelTransfer>
+   </soap:Body>
+</soap:Envelope>]]></con:request><con:credentials><con:username>guest</con:username><con:password>qg123$#</con:password><con:selectedAuthProfile>Basic</con:selectedAuthProfile><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:authType>Global HTTP Settings</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.quantiguous.com/services/IMTService/cancelTransferRequest"/><con:wsrmConfig version="1.2"/></con:call></con:operation><con:operation id="fc61ca25-2b8f-4d11-83ff-c59298e041c9" isOneWay="false" action="http://www.quantiguous.com/services/IMTService/deleteBeneficiary" name="deleteBeneficiary" bindingOperationName="deleteBeneficiary" type="Request-Response" outputName="deleteBeneficiaryResponse" inputName="deleteBeneficiaryRequest" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="b8edd691-28ab-46ba-a0ca-8446085bfcb7" name="Request 1"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>https://api.quantiguous.com/IMTService</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:ser="http://www.quantiguous.com/services">
+   <soap:Header/>
+   <soap:Body>
+      <ser:deleteBeneficiary>
+         <ser:version>1</ser:version>
+         <ser:uniqueRequestNo>delIMT4</ser:uniqueRequestNo>
+         <ser:appID>app1212</ser:appID>
+         <ser:customerID>2424</ser:customerID>
+         <ser:beneficiaryMobileNo>9637257987</ser:beneficiaryMobileNo>
+      </ser:deleteBeneficiary>
+   </soap:Body>
+</soap:Envelope>]]></con:request><con:credentials><con:username>guest</con:username><con:password>qg123$#</con:password><con:selectedAuthProfile>Basic</con:selectedAuthProfile><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:authType>Global HTTP Settings</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.quantiguous.com/services/IMTService/deleteBeneficiaryRequest"/><con:wsrmConfig version="1.2"/></con:call></con:operation><con:operation id="4e8315c3-c875-48fd-bb46-bac2b85d6a4f" isOneWay="false" action="http://www.quantiguous.com/services/IMTService/getBeneficiaries" name="getBeneficiaries" bindingOperationName="getBeneficiaries" type="Request-Response" outputName="getBeneficiariesResponse" inputName="getBeneficiariesRequest" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="63c84fd0-5b48-48ee-b1d0-f051aea71189" name="Request 1"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>https://api.quantiguous.com/IMTService</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:ser="http://www.quantiguous.com/services">
+   <soap:Header/>
+   <soap:Body>
+      <ser:getBeneficiaries>
+         <ser:version>1.0</ser:version>
+         <ser:appID>app1212</ser:appID>
+         <ser:customerID>2424</ser:customerID>
+
+         <ser:numBeneficiaries>10</ser:numBeneficiaries>
+      </ser:getBeneficiaries>
+   </soap:Body>
+</soap:Envelope>]]></con:request><con:credentials><con:username>guest</con:username><con:password>qg123$#</con:password><con:selectedAuthProfile>Basic</con:selectedAuthProfile><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:authType>Global HTTP Settings</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.quantiguous.com/services/IMTService/getBeneficiariesRequest"/><con:wsrmConfig version="1.2"/></con:call></con:operation><con:operation id="39c1d7cf-2ad8-42c2-9fca-1b3b9b1ecfbc" isOneWay="false" action="http://www.quantiguous.com/services/IMTService/getTransferStatus" name="getTransferStatus" bindingOperationName="getTransferStatus" type="Request-Response" outputName="getTransferStatusResponse" inputName="getTransferStatusRequest" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="b0110a7e-c432-4159-9f1c-b784c03d32b3" name="Request 1"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>https://api.quantiguous.com/IMTService</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:ser="http://www.quantiguous.com/services">
+   <soap:Header/>
+   <soap:Body>
+      <ser:getTransferStatus>
+         <ser:version>1.0</ser:version>
+         <ser:appID>app1212</ser:appID>
+         <ser:customerID>2424</ser:customerID>
+  
+         <ser:imtReferenceNo>D5E7DD5C34D54CB1B8D2F27D76ECAA83</ser:imtReferenceNo>
+      </ser:getTransferStatus>
+   </soap:Body>
+</soap:Envelope>]]></con:request><con:credentials><con:username>guest</con:username><con:password>qg123$#</con:password><con:selectedAuthProfile>Basic</con:selectedAuthProfile><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:authType>Global HTTP Settings</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.quantiguous.com/services/IMTService/getTransferStatusRequest"/><con:wsrmConfig version="1.2"/></con:call></con:operation><con:operation id="f4851927-4975-40bb-b40f-c049e5f84649" isOneWay="false" action="http://www.quantiguous.com/services/IMTService/initiateTransfer" name="initiateTransfer" bindingOperationName="initiateTransfer" type="Request-Response" outputName="initiateTransferResponse" inputName="initiateTransferRequest" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="9a0f58c6-eab1-4973-a276-2e6f68b05e15" name="Request 1"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>https://api.quantiguous.com/IMTService</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:ser="http://www.quantiguous.com/services">
+  <soap:Header/>
+  <soap:Body>
+   <ser:initiateTransfer>
+    <ser:version>1</ser:version>
+   <ser:uniqueRequestNo>830490099167</ser:uniqueRequestNo>
+   <ser:appID>app1212</ser:appID>
+   <ser:customerID>2424</ser:customerID>
+   <ser:beneficiaryMobileNo>9891091011</ser:beneficiaryMobileNo>
+   <ser:transferAmount>100</ser:transferAmount>
+   <ser:passCode>3498</ser:passCode>
+   <ser:remitterToBeneficiaryInfo>test</ser:remitterToBeneficiaryInfo>
+     </ser:initiateTransfer>
+  </soap:Body>
+</soap:Envelope>]]></con:request><con:credentials><con:username>guest</con:username><con:password>qg123$#</con:password><con:selectedAuthProfile>Basic</con:selectedAuthProfile><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:authType>Global HTTP Settings</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.quantiguous.com/services/IMTService/initiateTransferRequest"/><con:wsrmConfig version="1.2"/></con:call></con:operation></con:interface><con:requirements/><con:properties/><con:wssContainer/><con:databaseConnectionContainer/><con:oAuth2ProfileContainer/><con:reporting><con:reportTemplates/><con:xmlTemplates/><con:parameters/></con:reporting><con:sensitiveInformation/></con:soapui-project>
