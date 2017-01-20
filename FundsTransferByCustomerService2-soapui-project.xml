@@ -2191,4 +2191,60 @@ ONHOLD: (Future Use)</xsd:documentation>
       </xsd:sequence>
     </xsd:complexType>
   </xsd:element>
-</xsd:schema>]]></con:content><con:type>http://www.w3.org/2001/XMLSchema</con:type></con:part></con:definitionCache><con:endpoints><con:endpoint>/fundsTransferByCustomerService2</con:endpoint></con:endpoints><con:operation id="d7874e95-a358-448f-9724-8ee04d9a8941" isOneWay="false" action="http://www.quantiguous.com/services/getBalance" name="getBalance" bindingOperationName="getBalance" type="Request-Response" outputName="getBalanceResponse" inputName="getBalanceRequest" receivesAttachments="false" sendsAttachments="false"><con:settings/></con:operation><con:operation id="da3df0f1-9a2b-430c-9a60-82b36750646a" isOneWay="false" action="http://www.quantiguous.com/services/getStatus" name="getStatus" bindingOperationName="getStatus" type="Request-Response" outputName="getStatusResponse" inputName="getStatusRequest" receivesAttachments="false" sendsAttachments="false"><con:settings/></con:operation><con:operation id="e0a4d636-e0fe-4723-8868-f37cc1754524" isOneWay="false" action="http://www.quantiguous.com/services/payInvoice" name="payInvoice" bindingOperationName="payInvoice" type="Request-Response" outputName="payInvoiceResponse" inputName="payInvoiceRequest" receivesAttachments="false" sendsAttachments="false"><con:settings/></con:operation><con:operation id="e396ae52-bbc8-4384-8f5c-6f2419c9d184" isOneWay="false" action="http://www.quantiguous.com/services/transfer" name="transfer" bindingOperationName="transfer" type="Request-Response" outputName="transferResponse" inputName="transferRequest" receivesAttachments="false" sendsAttachments="false"><con:settings/></con:operation></con:interface><con:properties/><con:wssContainer/><con:databaseConnectionContainer/><con:oAuth2ProfileContainer/><con:reporting><con:xmlTemplates/><con:parameters/></con:reporting></con:soapui-project>
+</xsd:schema>]]></con:content><con:type>http://www.w3.org/2001/XMLSchema</con:type></con:part></con:definitionCache><con:endpoints><con:endpoint>/fundsTransferByCustomerService2</con:endpoint></con:endpoints><con:operation id="d7874e95-a358-448f-9724-8ee04d9a8941" isOneWay="false" action="http://www.quantiguous.com/services/getBalance" name="getBalance" bindingOperationName="getBalance" type="Request-Response" outputName="getBalanceResponse" inputName="getBalanceRequest" receivesAttachments="false" sendsAttachments="false"><con:settings/></con:operation><con:operation id="da3df0f1-9a2b-430c-9a60-82b36750646a" isOneWay="false" action="http://www.quantiguous.com/services/getStatus" name="getStatus" bindingOperationName="getStatus" type="Request-Response" outputName="getStatusResponse" inputName="getStatusRequest" receivesAttachments="false" sendsAttachments="false"><con:settings/></con:operation><con:operation id="e0a4d636-e0fe-4723-8868-f37cc1754524" isOneWay="false" action="http://www.quantiguous.com/services/payInvoice" name="payInvoice" bindingOperationName="payInvoice" type="Request-Response" outputName="payInvoiceResponse" inputName="payInvoiceRequest" receivesAttachments="false" sendsAttachments="false"><con:settings/></con:operation><con:operation id="e396ae52-bbc8-4384-8f5c-6f2419c9d184" isOneWay="false" action="http://www.quantiguous.com/services/transfer" name="transfer" bindingOperationName="transfer" type="Request-Response" outputName="transferResponse" inputName="transferRequest" receivesAttachments="false" sendsAttachments="false"><con:settings/></con:operation></con:interface><con:interface xsi:type="con:RestService" id="48bc8b9a-53fb-47f5-93fe-b6c69b42458a" wadlVersion="http://wadl.dev.java.net/2009/02" name="https://api.quantiguous.com" type="rest" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache type="TEXT" rootPart=""/><con:endpoints><con:endpoint>https://api.quantiguous.com</con:endpoint></con:endpoints><con:resource name="FundsTransferByCustomer2" path="/Worklight/fundsTransferByCustomerMobileService2/getBalance" id="e3f07ee7-8110-420a-8e83-0693d18136fd"><con:settings/><con:parameters/><con:method name="FundsTransferByCustomer2" id="1fd2de07-4033-4d10-85d3-e8f4c0f98a3a" method="POST"><con:settings/><con:parameters/><con:representation type="REQUEST"><con:mediaType>application/json</con:mediaType><con:params/></con:representation><con:representation type="FAULT"><con:mediaType>text/html</con:mediaType><con:status>401</con:status><con:params/><con:element>html</con:element></con:representation><con:representation type="FAULT"><con:mediaType>text/html;charset=utf-8</con:mediaType><con:status>404</con:status><con:params/><con:element>html</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType>application/json</con:mediaType><con:status>200</con:status><con:params/><con:element xmlns:tran="https://api.quantiguous.com/fundsTransferByCustomer2/transfer">tran:Response</con:element></con:representation><con:request name="ditto - NEFT - transfer" id="69250019-e1b5-4d1d-a250-44ef545d2e08" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>https://api.quantiguous.com</con:endpoint><con:request>{
+  "transfer": {
+    "version": "2",
+    "uniqueRequestNo": "FTNEFT0112",
+    "purposeCode": "PC01",
+    "customerID": "2424",
+    "debitAccountNo": "000190600002003",
+    "beneficiary": {
+      "beneficiaryDetail": {
+        "beneficiaryName": { "fullName": "DITTO" },
+        "beneficiaryAddress": { "address1": "NEW" },
+        "beneficiaryContact":{ "mobileNo": "9090876543" , "emailID": "abc@gmail.com"},
+        "beneficiaryAccountNo": "751990600011174",
+        "beneficiaryIFSC": "HDFC0000262"
+      }
+    },
+    "transferType": "NEFT",
+    "transferCurrencyCode": "INR",
+    "transferAmount": "200",
+    "remitterToBeneficiaryInfo": "DITTO"
+  }
+}</con:request><con:originalUri>https://api.quantiguous.com/fundsTransferByCustomer2/transfer</con:originalUri><con:credentials><con:username>guest</con:username><con:password>qg123$#</con:password><con:selectedAuthProfile>Basic</con:selectedAuthProfile><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:authType>Global HTTP Settings</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/><con:parameterOrder/></con:request><con:request name="ditto - IMPS - transfer" id="69250019-e1b5-4d1d-a250-44ef545d2e08" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>https://api.quantiguous.com</con:endpoint><con:request>{
+  "transfer": {
+    "version": "2",
+    "uniqueRequestNo": "FTNEFT0113",
+    "purposeCode": "PC01",
+    "customerID": "2424",
+    "debitAccountNo": "000190600002003",
+    "beneficiary": {
+      "beneficiaryDetail": {
+        "beneficiaryName": { "fullName": "DITTO" },
+        "beneficiaryAddress": { "address1": "NEW" },
+        "beneficiaryContact":{ "mobileNo": "9090876543" , "emailID": "abc@gmail.com"},
+        "beneficiaryAccountNo": "751990600011174",
+        "beneficiaryIFSC": "HDFC0000262"
+      }
+    },
+    "transferType": "IMPS",
+    "transferCurrencyCode": "INR",
+    "transferAmount": "200",
+    "remitterToBeneficiaryInfo": "DITTO"
+  }
+}</con:request><con:originalUri>https://api.quantiguous.com/fundsTransferByCustomer2/transfer</con:originalUri><con:credentials><con:username>guest</con:username><con:password>qg123$#</con:password><con:selectedAuthProfile>Basic</con:selectedAuthProfile><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:authType>Global HTTP Settings</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/><con:parameterOrder/></con:request><con:request name="getBalance" id="69250019-e1b5-4d1d-a250-44ef545d2e08" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>https://api.quantiguous.com</con:endpoint><con:request>{
+  "getBalance": {
+    "version": "1.0",
+    "appID": "app3434",
+    "customerID": "2424",
+    "AccountNumber": "000190600002003"
+  }
+}</con:request><con:originalUri>https://api.quantiguous.com/fundsTransferByCustomer2/transfer</con:originalUri><con:credentials><con:username>guest</con:username><con:password>qg123$#</con:password><con:selectedAuthProfile>Basic</con:selectedAuthProfile><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:authType>Global HTTP Settings</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/><con:parameterOrder/></con:request><con:request name="getStatus" id="69250019-e1b5-4d1d-a250-44ef545d2e08" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>https://api.quantiguous.com</con:endpoint><con:request>{
+  "getStatus": {
+    "version": "1.0",
+    "appID": "app3434",
+    "customerID": "2424",
+    "requestReferenceNo": "FTNEFT0112"
+  }
+}</con:request><con:originalUri>https://api.quantiguous.com/fundsTransferByCustomer2/transfer</con:originalUri><con:credentials><con:username>guest</con:username><con:password>qg123$#</con:password><con:selectedAuthProfile>Basic</con:selectedAuthProfile><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:authType>Global HTTP Settings</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/><con:parameterOrder/></con:request></con:method></con:resource></con:interface><con:properties/><con:wssContainer/><con:databaseConnectionContainer/><con:oAuth2ProfileContainer/><con:reporting><con:xmlTemplates/><con:parameters/></con:reporting></con:soapui-project>
