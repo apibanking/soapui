@@ -866,7 +866,7 @@ It is possible to ask for 'ANY', in which case the best transfer method will be 
    <soap:Body>
       <NS1:remit>
          <NS1:version>1.0</NS1:version>
-         <NS1:uniqueRequestNo>INWNEFT2</NS1:uniqueRequestNo>
+         <NS1:uniqueRequestNo>INFT2</NS1:uniqueRequestNo>
          <NS1:partnerCode>PC99</NS1:partnerCode>
          <NS1:remitterType>I</NS1:remitterType>
          <NS1:remitterName>
@@ -955,7 +955,7 @@ It is possible to ask for 'ANY', in which case the best transfer method will be 
    <soap:Body>
       <NS1:remit>
          <NS1:version>1.0</NS1:version>
-         <NS1:uniqueRequestNo>INWNEFT3</NS1:uniqueRequestNo>
+         <NS1:uniqueRequestNo>INWFT3</NS1:uniqueRequestNo>
          <NS1:partnerCode>PC99</NS1:partnerCode>
          <NS1:remitterType>I</NS1:remitterType>
          <NS1:remitterName>
@@ -1044,7 +1044,7 @@ It is possible to ask for 'ANY', in which case the best transfer method will be 
    <soap:Body>
       <NS1:remit>
          <NS1:version>1.0</NS1:version>
-         <NS1:uniqueRequestNo>INWNEFT32</NS1:uniqueRequestNo>
+         <NS1:uniqueRequestNo>INWNEFT3235</NS1:uniqueRequestNo>
          <NS1:partnerCode>PC99</NS1:partnerCode>
          <NS1:remitterType>I</NS1:remitterType>
          <NS1:remitterName>
@@ -1088,7 +1088,7 @@ It is possible to ask for 'ANY', in which case the best transfer method will be 
          </NS1:remitterIdentities>
          <NS1:beneficiaryType>I</NS1:beneficiaryType>
          <NS1:beneficiaryName>
-            <NS1:fullName>DITTO</NS1:fullName>
+            <NS1:fullName>DITTO DELAY</NS1:fullName>
          </NS1:beneficiaryName>
          <NS1:beneficiaryAddress>
             <NS1:address1>addr1</NS1:address1>
@@ -1119,12 +1119,12 @@ It is possible to ask for 'ANY', in which case the best transfer method will be 
                <NS1:expiryDate>2016-02-20</NS1:expiryDate>
             </NS1:identity>
          </NS1:beneficiaryIdentities>
-         <NS1:beneficiaryAccountNo>301990600011174</NS1:beneficiaryAccountNo>
+         <NS1:beneficiaryAccountNo>751990600011174</NS1:beneficiaryAccountNo>
          <NS1:beneficiaryIFSC>HDFC0000262</NS1:beneficiaryIFSC>
          <NS1:transferType>RTGS</NS1:transferType>
          <NS1:transferCurrencyCode>INR</NS1:transferCurrencyCode>
          <NS1:transferAmount>300000</NS1:transferAmount>
-         <NS1:remitterToBeneficiaryInfo>DITTO</NS1:remitterToBeneficiaryInfo>
+         <NS1:remitterToBeneficiaryInfo>DITTO DELAY</NS1:remitterToBeneficiaryInfo>
          <NS1:purposeCode>PC10</NS1:purposeCode>
       </NS1:remit>
    </soap:Body>
@@ -1133,7 +1133,7 @@ It is possible to ask for 'ANY', in which case the best transfer method will be 
    <soap:Body>
       <NS1:remit>
          <NS1:version>1.0</NS1:version>
-         <NS1:uniqueRequestNo>INWNEFT22312</NS1:uniqueRequestNo>
+         <NS1:uniqueRequestNo>INWT22312</NS1:uniqueRequestNo>
          <NS1:partnerCode>PC99</NS1:partnerCode>
          <NS1:remitterType>I</NS1:remitterType>
          <NS1:remitterName>
@@ -1222,7 +1222,7 @@ It is possible to ask for 'ANY', in which case the best transfer method will be 
    <soap:Body>
       <NS1:remit>
          <NS1:version>1.0</NS1:version>
-         <NS1:uniqueRequestNo>INWNEFT2</NS1:uniqueRequestNo>
+         <NS1:uniqueRequestNo>INWNE2122</NS1:uniqueRequestNo>
          <NS1:partnerCode>PC99</NS1:partnerCode>
          <NS1:remitterType>I</NS1:remitterType>
          <NS1:remitterName>
@@ -1297,7 +1297,7 @@ It is possible to ask for 'ANY', in which case the best transfer method will be 
                <NS1:expiryDate>2016-02-20</NS1:expiryDate>
             </NS1:identity>
          </NS1:beneficiaryIdentities>
-         <NS1:beneficiaryAccountNo>751990600011174</NS1:beneficiaryAccountNo>
+         <NS1:beneficiaryAccountNo>301990600011174</NS1:beneficiaryAccountNo>
          <NS1:beneficiaryIFSC>HDFC0000262</NS1:beneficiaryIFSC>
          <NS1:transferType>RTGS</NS1:transferType>
          <NS1:transferCurrencyCode>INR</NS1:transferCurrencyCode>

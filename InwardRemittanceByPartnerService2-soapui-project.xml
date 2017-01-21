@@ -878,109 +878,531 @@ It is possible to ask for 'ANY', in which case the best transfer method will be 
       </xsd:sequence>
     </xsd:choice>
   </xsd:complexType>
-</xsd:schema>]]></con:content><con:type>http://www.w3.org/2001/XMLSchema</con:type></con:part></con:definitionCache><con:endpoints><con:endpoint>http://api.quantiguous.com/InwardRemittanceByPartnerService2</con:endpoint></con:endpoints><con:operation id="51865db4-dbcd-4be0-978a-99a060c5b972" isOneWay="false" action="http://www.quantiguous.com/services/InwardRemittanceByPartnerService2/getBalance" name="getBalance" bindingOperationName="getBalance" type="Request-Response" outputName="getBalanceResponse" inputName="getBalanceRequest" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="831c74e8-e726-4dce-a4f7-992fc038e2f4" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://api.quantiguous.com/InwardRemittanceByPartnerService2</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:ser="http://www.quantiguous.com/services">
+</xsd:schema>]]></con:content><con:type>http://www.w3.org/2001/XMLSchema</con:type></con:part></con:definitionCache><con:endpoints><con:endpoint>http://api.quantiguous.com/InwardRemittanceByPartnerService2</con:endpoint></con:endpoints><con:operation id="51865db4-dbcd-4be0-978a-99a060c5b972" isOneWay="false" action="http://www.quantiguous.com/services/InwardRemittanceByPartnerService2/getBalance" name="getBalance" bindingOperationName="getBalance" type="Request-Response" outputName="getBalanceResponse" inputName="getBalanceRequest" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="831c74e8-e726-4dce-a4f7-992fc038e2f4" name="Request 1"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>https://api.quantiguous.com/InwardRemittanceByPartnerService2</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:ser="http://www.quantiguous.com/services">
    <soap:Header/>
    <soap:Body>
       <ser:getBalance>
-         <ser:version>?</ser:version>
-         <ser:partnerCode>?</ser:partnerCode>
+         <ser:version>1.0</ser:version>
+         <ser:partnerCode>PC99</ser:partnerCode>
       </ser:getBalance>
    </soap:Body>
-</soap:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.quantiguous.com/services/InwardRemittanceByPartnerService2/getBalanceRequest"/></con:call></con:operation><con:operation id="67369a5f-5eaa-486a-8e3c-1fdf2c04135a" isOneWay="false" action="http://www.quantiguous.com/services/InwardRemittanceByPartnerService2/getStatus" name="getStatus" bindingOperationName="getStatus" type="Request-Response" outputName="getStatusResponse" inputName="getStatusRequest" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="38747d69-3010-4edd-b3c0-c26a520ac49d" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://api.quantiguous.com/InwardRemittanceByPartnerService2</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:ser="http://www.quantiguous.com/services">
+</soap:Envelope>]]></con:request><con:credentials><con:username>guest</con:username><con:password>qg123$#</con:password><con:selectedAuthProfile>Basic</con:selectedAuthProfile><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:authType>Global HTTP Settings</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.quantiguous.com/services/InwardRemittanceByPartnerService2/getBalanceRequest"/><con:wsrmConfig version="1.2"/></con:call></con:operation><con:operation id="67369a5f-5eaa-486a-8e3c-1fdf2c04135a" isOneWay="false" action="http://www.quantiguous.com/services/InwardRemittanceByPartnerService2/getStatus" name="getStatus" bindingOperationName="getStatus" type="Request-Response" outputName="getStatusResponse" inputName="getStatusRequest" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="ad92d95e-3283-4002-8e5a-e1a43f5bc8c7" name="Request 1"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>https://api.quantiguous.com/InwardRemittanceByPartnerService2</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:ser="http://www.quantiguous.com/services">
    <soap:Header/>
    <soap:Body>
       <ser:getStatus>
-         <ser:version>?</ser:version>
-         <ser:partnerCode>?</ser:partnerCode>
-         <ser:requestReferenceNo>?</ser:requestReferenceNo>
+         <ser:version>1.0</ser:version>
+         <ser:partnerCode>PC99</ser:partnerCode>
+         <ser:requestReferenceNo>NEFTTEST101213</ser:requestReferenceNo>
       </ser:getStatus>
    </soap:Body>
-</soap:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.quantiguous.com/services/InwardRemittanceByPartnerService2/getStatusRequest"/></con:call></con:operation><con:operation id="afd94d4c-7a2d-4406-99ee-a33cd475d172" isOneWay="false" action="http://www.quantiguous.com/services/InwardRemittanceByPartnerService2/startRemit" name="startRemit" bindingOperationName="startRemit" type="Request-Response" outputName="startRemitResponse" inputName="startRemitRequest" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="36956b86-2285-430f-b2dd-ef2327e41660" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://api.quantiguous.com/InwardRemittanceByPartnerService2</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:ser="http://www.quantiguous.com/services">
+</soap:Envelope>]]></con:request><con:credentials><con:username>guest</con:username><con:password>qg123$#</con:password><con:selectedAuthProfile>Basic</con:selectedAuthProfile><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:authType>Global HTTP Settings</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.quantiguous.com/services/InwardRemittanceByPartnerService2/getStatusRequest"/><con:wsrmConfig version="1.2"/></con:call></con:operation><con:operation id="afd94d4c-7a2d-4406-99ee-a33cd475d172" isOneWay="false" action="http://www.quantiguous.com/services/InwardRemittanceByPartnerService2/startRemit" name="startRemit" bindingOperationName="startRemit" type="Request-Response" outputName="startRemitResponse" inputName="startRemitRequest" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="36956b86-2285-430f-b2dd-ef2327e41660" name="ditto - NEFT"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>https://api.quantiguous.com/InwardRemittanceByPartnerService2</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:ser="http://www.quantiguous.com/services">
    <soap:Header/>
    <soap:Body>
       <ser:startRemit>
-         <ser:version>?</ser:version>
-         <ser:uniqueRequestNo>?</ser:uniqueRequestNo>
-         <ser:partnerCode>?</ser:partnerCode>
-         <ser:remitterType>?</ser:remitterType>
+         <ser:version>1.0</ser:version>
+         <ser:uniqueRequestNo>NEFTTEST101213</ser:uniqueRequestNo>
+         <ser:partnerCode>PC99</ser:partnerCode>
+         <ser:remitterType>I</ser:remitterType>
          <ser:remitterName>
-            <ser:fullName>?</ser:fullName>
+            <ser:fullName>neha</ser:fullName>
          </ser:remitterName>
-         <!--Optional:-->
          <ser:remitterAddress>
-            <ser:address1>?</ser:address1>
+            <ser:address1>Mumbai DITTO FUND </ser:address1>
             <!--Optional:-->
-            <ser:address2>?</ser:address2>
             <!--Optional:-->
-            <ser:address3>?</ser:address3>
+            <ser:address3>MAlad</ser:address3>
             <!--Optional:-->
-            <ser:postalCode>?</ser:postalCode>
+            <ser:postalCode>222002</ser:postalCode>
             <!--Optional:-->
-            <ser:city>?</ser:city>
+            <ser:city>Mumbai</ser:city>
             <!--Optional:-->
-            <ser:stateOrProvince>?</ser:stateOrProvince>
+            <ser:stateOrProvince>Maharastra</ser:stateOrProvince>
             <!--Optional:-->
-            <ser:country>?</ser:country>
+            <ser:country>IN</ser:country>
          </ser:remitterAddress>
          <ser:remitterContact>
-            <!--Optional:-->
-            <ser:mobileNo>?</ser:mobileNo>
-            <!--Optional:-->
-            <ser:emailID>?</ser:emailID>
+            <ser:mobileNo>8976613173</ser:mobileNo>
+            <ser:emailID>dj.sreyas@gmail.com</ser:emailID>
          </ser:remitterContact>
          <ser:remitterIdentities>
             <!--0 to 4 repetitions:-->
             <ser:identity>
-               <ser:idType>?</ser:idType>
-               <ser:idNumber>?</ser:idNumber>
-               <ser:idCountry>?</ser:idCountry>
-               <ser:issueDate>?</ser:issueDate>
-               <ser:expiryDate>?</ser:expiryDate>
+               <ser:idType>passport</ser:idType>
+               <ser:idNumber>1231231</ser:idNumber>
+               <ser:idCountry>IN</ser:idCountry>
+               <ser:issueDate>2016-01-10</ser:issueDate>
+               <ser:expiryDate>2016-02-20</ser:expiryDate>
+            </ser:identity>
+            <ser:identity>
+               <ser:idType>birthcerti</ser:idType>
+               <ser:idNumber>12356</ser:idNumber>
+               <ser:idCountry>IN</ser:idCountry>
+               <ser:issueDate>2016-01-10</ser:issueDate>
+               <ser:expiryDate>2016-02-20</ser:expiryDate>
+            </ser:identity>
+            <ser:identity>
+               <ser:idType>dl</ser:idType>
+               <ser:idNumber>887655</ser:idNumber>
+               <ser:idCountry>IN</ser:idCountry>
+               <ser:issueDate>2016-01-10</ser:issueDate>
+               <ser:expiryDate>2016-02-20</ser:expiryDate>
             </ser:identity>
          </ser:remitterIdentities>
-         <ser:beneficiaryType>?</ser:beneficiaryType>
+         <ser:beneficiaryType>I</ser:beneficiaryType>
          <ser:beneficiaryName>
-            <ser:fullName>?</ser:fullName>
+            <ser:fullName>DITTO</ser:fullName>
          </ser:beneficiaryName>
-         <!--Optional:-->
          <ser:beneficiaryAddress>
-            <ser:address1>?</ser:address1>
+            <ser:address1>addr1</ser:address1>
             <!--Optional:-->
-            <ser:address2>?</ser:address2>
+            <ser:address2>addr2</ser:address2>
             <!--Optional:-->
-            <ser:address3>?</ser:address3>
+            <ser:address3>addr3</ser:address3>
             <!--Optional:-->
-            <ser:postalCode>?</ser:postalCode>
+            <ser:postalCode>222001</ser:postalCode>
             <!--Optional:-->
-            <ser:city>?</ser:city>
+            <ser:city>Mumbai</ser:city>
             <!--Optional:-->
-            <ser:stateOrProvince>?</ser:stateOrProvince>
+            <ser:stateOrProvince>Maharstar</ser:stateOrProvince>
             <!--Optional:-->
-            <ser:country>?</ser:country>
+            <ser:country>IN</ser:country>
          </ser:beneficiaryAddress>
          <ser:beneficiaryContact>
-            <!--Optional:-->
-            <ser:mobileNo>?</ser:mobileNo>
-            <!--Optional:-->
-            <ser:emailID>?</ser:emailID>
+            <ser:mobileNo>8976613173</ser:mobileNo>
+            <ser:emailID>bene.a@gmail.com</ser:emailID>
          </ser:beneficiaryContact>
          <ser:beneficiaryIdentities>
             <!--0 to 4 repetitions:-->
             <ser:identity>
-               <ser:idType>?</ser:idType>
-               <ser:idNumber>?</ser:idNumber>
-               <ser:idCountry>?</ser:idCountry>
-               <ser:issueDate>?</ser:issueDate>
-               <ser:expiryDate>?</ser:expiryDate>
+               <ser:idType>passport1</ser:idType>
+               <ser:idNumber>1231231</ser:idNumber>
+               <ser:idCountry>IN</ser:idCountry>
+               <ser:issueDate>2016-01-10</ser:issueDate>
+               <ser:expiryDate>2016-02-20</ser:expiryDate>
+            </ser:identity>
+            <ser:identity>
+               <ser:idType>birthcerti1</ser:idType>
+               <ser:idNumber>12356</ser:idNumber>
+               <ser:idCountry>IN</ser:idCountry>
+               <ser:issueDate>2016-01-10</ser:issueDate>
+               <ser:expiryDate>2016-02-20</ser:expiryDate>
             </ser:identity>
          </ser:beneficiaryIdentities>
-         <ser:beneficiaryAccountNo>?</ser:beneficiaryAccountNo>
-         <ser:beneficiaryIFSC>?</ser:beneficiaryIFSC>
-         <ser:transferType>?</ser:transferType>
-         <ser:transferCurrencyCode>?</ser:transferCurrencyCode>
-         <ser:transferAmount>?</ser:transferAmount>
-         <ser:remitterToBeneficiaryInfo>?</ser:remitterToBeneficiaryInfo>
-         <ser:purposeCode>?</ser:purposeCode>
+         <ser:beneficiaryAccountNo>751990600011174</ser:beneficiaryAccountNo>
+         <ser:beneficiaryIFSC>HDFC0000001</ser:beneficiaryIFSC>
+         <ser:transferType>NEFT</ser:transferType>
+         <ser:transferCurrencyCode>INR</ser:transferCurrencyCode>
+         <ser:transferAmount>300</ser:transferAmount>
+         <ser:remitterToBeneficiaryInfo>DITTO FUND TRANSFE</ser:remitterToBeneficiaryInfo>
+         <ser:purposeCode>PC10</ser:purposeCode>
       </ser:startRemit>
    </soap:Body>
-</soap:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.quantiguous.com/services/InwardRemittanceByPartnerService2/startRemitRequest"/></con:call></con:operation></con:interface><con:properties/><con:wssContainer/><con:databaseConnectionContainer/><con:oAuth2ProfileContainer/></con:soapui-project>
+</soap:Envelope>]]></con:request><con:credentials><con:username>guest</con:username><con:password>qg123$#</con:password><con:selectedAuthProfile>Basic</con:selectedAuthProfile><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:authType>Global HTTP Settings</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.quantiguous.com/services/InwardRemittanceByPartnerService2/startRemitRequest"/><con:wsrmConfig version="1.2"/></con:call><con:call id="32c9da10-8ed5-472c-97ed-32bbb1e583e0" name="ditto - FT"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>https://api.quantiguous.com/InwardRemittanceByPartnerService2</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:ser="http://www.quantiguous.com/services">
+   <soap:Header/>
+   <soap:Body>
+      <ser:startRemit>
+         <ser:version>1.0</ser:version>
+         <ser:uniqueRequestNo>NEFTTE12ST12</ser:uniqueRequestNo>
+         <ser:partnerCode>PC99</ser:partnerCode>
+         <ser:remitterType>I</ser:remitterType>
+         <ser:remitterName>
+            <ser:fullName>neha</ser:fullName>
+         </ser:remitterName>
+         <ser:remitterAddress>
+            <ser:address1>Mumbai DITTO FUND </ser:address1>
+            <!--Optional:-->
+            <!--Optional:-->
+            <ser:address3>MAlad</ser:address3>
+            <!--Optional:-->
+            <ser:postalCode>222002</ser:postalCode>
+            <!--Optional:-->
+            <ser:city>Mumbai</ser:city>
+            <!--Optional:-->
+            <ser:stateOrProvince>Maharastra</ser:stateOrProvince>
+            <!--Optional:-->
+            <ser:country>IN</ser:country>
+         </ser:remitterAddress>
+         <ser:remitterContact>
+            <ser:mobileNo>8976613173</ser:mobileNo>
+            <ser:emailID>dj.sreyas@gmail.com</ser:emailID>
+         </ser:remitterContact>
+         <ser:remitterIdentities>
+            <!--0 to 4 repetitions:-->
+            <ser:identity>
+               <ser:idType>passport</ser:idType>
+               <ser:idNumber>1231231</ser:idNumber>
+               <ser:idCountry>IN</ser:idCountry>
+               <ser:issueDate>2016-01-10</ser:issueDate>
+               <ser:expiryDate>2016-02-20</ser:expiryDate>
+            </ser:identity>
+            <ser:identity>
+               <ser:idType>birthcerti</ser:idType>
+               <ser:idNumber>12356</ser:idNumber>
+               <ser:idCountry>IN</ser:idCountry>
+               <ser:issueDate>2016-01-10</ser:issueDate>
+               <ser:expiryDate>2016-02-20</ser:expiryDate>
+            </ser:identity>
+            <ser:identity>
+               <ser:idType>dl</ser:idType>
+               <ser:idNumber>887655</ser:idNumber>
+               <ser:idCountry>IN</ser:idCountry>
+               <ser:issueDate>2016-01-10</ser:issueDate>
+               <ser:expiryDate>2016-02-20</ser:expiryDate>
+            </ser:identity>
+         </ser:remitterIdentities>
+         <ser:beneficiaryType>I</ser:beneficiaryType>
+         <ser:beneficiaryName>
+            <ser:fullName>DITTO</ser:fullName>
+         </ser:beneficiaryName>
+         <ser:beneficiaryAddress>
+            <ser:address1>addr1</ser:address1>
+            <!--Optional:-->
+            <ser:address2>addr2</ser:address2>
+            <!--Optional:-->
+            <ser:address3>addr3</ser:address3>
+            <!--Optional:-->
+            <ser:postalCode>222001</ser:postalCode>
+            <!--Optional:-->
+            <ser:city>Mumbai</ser:city>
+            <!--Optional:-->
+            <ser:stateOrProvince>Maharstar</ser:stateOrProvince>
+            <!--Optional:-->
+            <ser:country>IN</ser:country>
+         </ser:beneficiaryAddress>
+         <ser:beneficiaryContact>
+            <ser:mobileNo>8976613173</ser:mobileNo>
+            <ser:emailID>bene.a@gmail.com</ser:emailID>
+         </ser:beneficiaryContact>
+         <ser:beneficiaryIdentities>
+            <!--0 to 4 repetitions:-->
+            <ser:identity>
+               <ser:idType>passport1</ser:idType>
+               <ser:idNumber>1231231</ser:idNumber>
+               <ser:idCountry>IN</ser:idCountry>
+               <ser:issueDate>2016-01-10</ser:issueDate>
+               <ser:expiryDate>2016-02-20</ser:expiryDate>
+            </ser:identity>
+            <ser:identity>
+               <ser:idType>birthcerti1</ser:idType>
+               <ser:idNumber>12356</ser:idNumber>
+               <ser:idCountry>IN</ser:idCountry>
+               <ser:issueDate>2016-01-10</ser:issueDate>
+               <ser:expiryDate>2016-02-20</ser:expiryDate>
+            </ser:identity>
+         </ser:beneficiaryIdentities>
+         <ser:beneficiaryAccountNo>751990600011174</ser:beneficiaryAccountNo>
+         <ser:beneficiaryIFSC>YESB0000001</ser:beneficiaryIFSC>
+         <ser:transferType>FT</ser:transferType>
+         <ser:transferCurrencyCode>INR</ser:transferCurrencyCode>
+         <ser:transferAmount>300</ser:transferAmount>
+         <ser:remitterToBeneficiaryInfo>DITTO FUND TRANSFE</ser:remitterToBeneficiaryInfo>
+         <ser:purposeCode>PC10</ser:purposeCode>
+      </ser:startRemit>
+   </soap:Body>
+</soap:Envelope>]]></con:request><con:credentials><con:username>guest</con:username><con:password>qg123$#</con:password><con:selectedAuthProfile>Basic</con:selectedAuthProfile><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:authType>Global HTTP Settings</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.quantiguous.com/services/InwardRemittanceByPartnerService2/startRemitRequest"/><con:wsrmConfig version="1.2"/></con:call><con:call id="8eabf147-6eb0-4e37-9a1e-647c470039f9" name="ditto - IMPS"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>https://api.quantiguous.com/InwardRemittanceByPartnerService2</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:ser="http://www.quantiguous.com/services">
+   <soap:Header/>
+   <soap:Body>
+      <ser:startRemit>
+         <ser:version>1.0</ser:version>
+         <ser:uniqueRequestNo>IMTEST212</ser:uniqueRequestNo>
+         <ser:partnerCode>PC99</ser:partnerCode>
+         <ser:remitterType>I</ser:remitterType>
+         <ser:remitterName>
+            <ser:fullName>neha</ser:fullName>
+         </ser:remitterName>
+         <ser:remitterAddress>
+            <ser:address1>Mumbai DITTO FUND </ser:address1>
+            <!--Optional:-->
+            <!--Optional:-->
+            <ser:address3>MAlad</ser:address3>
+            <!--Optional:-->
+            <ser:postalCode>222002</ser:postalCode>
+            <!--Optional:-->
+            <ser:city>Mumbai</ser:city>
+            <!--Optional:-->
+            <ser:stateOrProvince>Maharastra</ser:stateOrProvince>
+            <!--Optional:-->
+            <ser:country>IN</ser:country>
+         </ser:remitterAddress>
+         <ser:remitterContact>
+            <ser:mobileNo>8976613173</ser:mobileNo>
+            <ser:emailID>dj.sreyas@gmail.com</ser:emailID>
+         </ser:remitterContact>
+         <ser:remitterIdentities>
+            <!--0 to 4 repetitions:-->
+            <ser:identity>
+               <ser:idType>passport</ser:idType>
+               <ser:idNumber>1231231</ser:idNumber>
+               <ser:idCountry>IN</ser:idCountry>
+               <ser:issueDate>2016-01-10</ser:issueDate>
+               <ser:expiryDate>2016-02-20</ser:expiryDate>
+            </ser:identity>
+            <ser:identity>
+               <ser:idType>birthcerti</ser:idType>
+               <ser:idNumber>12356</ser:idNumber>
+               <ser:idCountry>IN</ser:idCountry>
+               <ser:issueDate>2016-01-10</ser:issueDate>
+               <ser:expiryDate>2016-02-20</ser:expiryDate>
+            </ser:identity>
+            <ser:identity>
+               <ser:idType>dl</ser:idType>
+               <ser:idNumber>887655</ser:idNumber>
+               <ser:idCountry>IN</ser:idCountry>
+               <ser:issueDate>2016-01-10</ser:issueDate>
+               <ser:expiryDate>2016-02-20</ser:expiryDate>
+            </ser:identity>
+         </ser:remitterIdentities>
+         <ser:beneficiaryType>I</ser:beneficiaryType>
+         <ser:beneficiaryName>
+            <ser:fullName>DITTO</ser:fullName>
+         </ser:beneficiaryName>
+         <ser:beneficiaryAddress>
+            <ser:address1>addr1</ser:address1>
+            <!--Optional:-->
+            <ser:address2>addr2</ser:address2>
+            <!--Optional:-->
+            <ser:address3>addr3</ser:address3>
+            <!--Optional:-->
+            <ser:postalCode>222001</ser:postalCode>
+            <!--Optional:-->
+            <ser:city>Mumbai</ser:city>
+            <!--Optional:-->
+            <ser:stateOrProvince>Maharstar</ser:stateOrProvince>
+            <!--Optional:-->
+            <ser:country>IN</ser:country>
+         </ser:beneficiaryAddress>
+         <ser:beneficiaryContact>
+            <ser:mobileNo>8976613173</ser:mobileNo>
+            <ser:emailID>bene.a@gmail.com</ser:emailID>
+         </ser:beneficiaryContact>
+         <ser:beneficiaryIdentities>
+            <!--0 to 4 repetitions:-->
+            <ser:identity>
+               <ser:idType>passport1</ser:idType>
+               <ser:idNumber>1231231</ser:idNumber>
+               <ser:idCountry>IN</ser:idCountry>
+               <ser:issueDate>2016-01-10</ser:issueDate>
+               <ser:expiryDate>2016-02-20</ser:expiryDate>
+            </ser:identity>
+            <ser:identity>
+               <ser:idType>birthcerti1</ser:idType>
+               <ser:idNumber>12356</ser:idNumber>
+               <ser:idCountry>IN</ser:idCountry>
+               <ser:issueDate>2016-01-10</ser:issueDate>
+               <ser:expiryDate>2016-02-20</ser:expiryDate>
+            </ser:identity>
+         </ser:beneficiaryIdentities>
+         <ser:beneficiaryAccountNo>EE00</ser:beneficiaryAccountNo>
+         <ser:beneficiaryIFSC>HDFC0000001</ser:beneficiaryIFSC>
+         <ser:transferType>IMPS</ser:transferType>
+         <ser:transferCurrencyCode>INR</ser:transferCurrencyCode>
+         <ser:transferAmount>300</ser:transferAmount>
+         <ser:remitterToBeneficiaryInfo>DITTO</ser:remitterToBeneficiaryInfo>
+         <ser:purposeCode>PC06</ser:purposeCode>
+      </ser:startRemit>
+   </soap:Body>
+</soap:Envelope>]]></con:request><con:credentials><con:username>guest</con:username><con:password>qg123$#</con:password><con:selectedAuthProfile>Basic</con:selectedAuthProfile><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:authType>Global HTTP Settings</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.quantiguous.com/services/InwardRemittanceByPartnerService2/startRemitRequest"/><con:wsrmConfig version="1.2"/></con:call><con:call id="90f4b179-7824-4071-89ee-bdfa97fb1e0e" name="ditto timedout - RTGS(success)"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>https://api.quantiguous.com/InwardRemittanceByPartnerService2</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:ser="http://www.quantiguous.com/services">
+   <soap:Header/>
+   <soap:Body>
+      <ser:startRemit>
+         <ser:version>1.0</ser:version>
+         <ser:uniqueRequestNo>rtgs1215</ser:uniqueRequestNo>
+         <ser:partnerCode>PC99</ser:partnerCode>
+         <ser:remitterType>I</ser:remitterType>
+         <ser:remitterName>
+            <ser:fullName>neha</ser:fullName>
+         </ser:remitterName>
+         <ser:remitterAddress>
+            <ser:address1>Mumbai DITTO FUND </ser:address1>
+            <!--Optional:-->
+            <!--Optional:-->
+            <ser:address3>MAlad</ser:address3>
+            <!--Optional:-->
+            <ser:postalCode>222002</ser:postalCode>
+            <!--Optional:-->
+            <ser:city>Mumbai</ser:city>
+            <!--Optional:-->
+            <ser:stateOrProvince>Maharastra</ser:stateOrProvince>
+            <!--Optional:-->
+            <ser:country>IN</ser:country>
+         </ser:remitterAddress>
+         <ser:remitterContact>
+            <ser:mobileNo>8976613173</ser:mobileNo>
+            <ser:emailID>dj.sreyas@gmail.com</ser:emailID>
+         </ser:remitterContact>
+         <ser:remitterIdentities>
+            <!--0 to 4 repetitions:-->
+            <ser:identity>
+               <ser:idType>passport</ser:idType>
+               <ser:idNumber>1231231</ser:idNumber>
+               <ser:idCountry>IN</ser:idCountry>
+               <ser:issueDate>2016-01-10</ser:issueDate>
+               <ser:expiryDate>2016-02-20</ser:expiryDate>
+            </ser:identity>
+            <ser:identity>
+               <ser:idType>birthcerti</ser:idType>
+               <ser:idNumber>12356</ser:idNumber>
+               <ser:idCountry>IN</ser:idCountry>
+               <ser:issueDate>2016-01-10</ser:issueDate>
+               <ser:expiryDate>2016-02-20</ser:expiryDate>
+            </ser:identity>
+            <ser:identity>
+               <ser:idType>dl</ser:idType>
+               <ser:idNumber>887655</ser:idNumber>
+               <ser:idCountry>IN</ser:idCountry>
+               <ser:issueDate>2016-01-10</ser:issueDate>
+               <ser:expiryDate>2016-02-20</ser:expiryDate>
+            </ser:identity>
+         </ser:remitterIdentities>
+         <ser:beneficiaryType>I</ser:beneficiaryType>
+         <ser:beneficiaryName>
+            <ser:fullName>DITTO DELAY</ser:fullName>
+         </ser:beneficiaryName>
+         <ser:beneficiaryAddress>
+            <ser:address1>addr1</ser:address1>
+            <!--Optional:-->
+            <ser:address2>addr2</ser:address2>
+            <!--Optional:-->
+            <ser:address3>addr3</ser:address3>
+            <!--Optional:-->
+            <ser:postalCode>222001</ser:postalCode>
+            <!--Optional:-->
+            <ser:city>Mumbai</ser:city>
+            <!--Optional:-->
+            <ser:stateOrProvince>Maharstar</ser:stateOrProvince>
+            <!--Optional:-->
+            <ser:country>IN</ser:country>
+         </ser:beneficiaryAddress>
+         <ser:beneficiaryContact>
+            <ser:mobileNo>8976613173</ser:mobileNo>
+            <ser:emailID>bene.a@gmail.com</ser:emailID>
+         </ser:beneficiaryContact>
+         <ser:beneficiaryIdentities>
+            <!--0 to 4 repetitions:-->
+            <ser:identity>
+               <ser:idType>passport1</ser:idType>
+               <ser:idNumber>1231231</ser:idNumber>
+               <ser:idCountry>IN</ser:idCountry>
+               <ser:issueDate>2016-01-10</ser:issueDate>
+               <ser:expiryDate>2016-02-20</ser:expiryDate>
+            </ser:identity>
+            <ser:identity>
+               <ser:idType>birthcerti1</ser:idType>
+               <ser:idNumber>12356</ser:idNumber>
+               <ser:idCountry>IN</ser:idCountry>
+               <ser:issueDate>2016-01-10</ser:issueDate>
+               <ser:expiryDate>2016-02-20</ser:expiryDate>
+            </ser:identity>
+         </ser:beneficiaryIdentities>
+         <ser:beneficiaryAccountNo>751990600011174</ser:beneficiaryAccountNo>
+         <ser:beneficiaryIFSC>HDFC0000001</ser:beneficiaryIFSC>
+         <ser:transferType>RTGS</ser:transferType>
+         <ser:transferCurrencyCode>INR</ser:transferCurrencyCode>
+         <ser:transferAmount>300000</ser:transferAmount>
+         <ser:remitterToBeneficiaryInfo>DITTO DELAY</ser:remitterToBeneficiaryInfo>
+         <ser:purposeCode>PC51</ser:purposeCode>
+      </ser:startRemit>
+   </soap:Body>
+</soap:Envelope>]]></con:request><con:credentials><con:username>guest</con:username><con:password>qg123$#</con:password><con:selectedAuthProfile>Basic</con:selectedAuthProfile><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:authType>Global HTTP Settings</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.quantiguous.com/services/InwardRemittanceByPartnerService2/startRemitRequest"/><con:wsrmConfig version="1.2"/></con:call><con:call id="45b9918f-ce11-4e16-8a5c-cc57daebdac5" name="ditto  - NEFT - scheduled for next work day"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>https://api.quantiguous.com/InwardRemittanceByPartnerService2</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:ser="http://www.quantiguous.com/services">
+   <soap:Header/>
+   <soap:Body>
+      <ser:startRemit>
+         <ser:version>1.0</ser:version>
+         <ser:uniqueRequestNo>rtg1122s1215</ser:uniqueRequestNo>
+         <ser:partnerCode>PC99</ser:partnerCode>
+         <ser:remitterType>I</ser:remitterType>
+         <ser:remitterName>
+            <ser:fullName>neha</ser:fullName>
+         </ser:remitterName>
+         <ser:remitterAddress>
+            <ser:address1>Mumbai DITTO FUND </ser:address1>
+            <!--Optional:-->
+            <!--Optional:-->
+            <ser:address3>MAlad</ser:address3>
+            <!--Optional:-->
+            <ser:postalCode>222002</ser:postalCode>
+            <!--Optional:-->
+            <ser:city>Mumbai</ser:city>
+            <!--Optional:-->
+            <ser:stateOrProvince>Maharastra</ser:stateOrProvince>
+            <!--Optional:-->
+            <ser:country>IN</ser:country>
+         </ser:remitterAddress>
+         <ser:remitterContact>
+            <ser:mobileNo>8976613173</ser:mobileNo>
+            <ser:emailID>dj.sreyas@gmail.com</ser:emailID>
+         </ser:remitterContact>
+         <ser:remitterIdentities>
+            <!--0 to 4 repetitions:-->
+            <ser:identity>
+               <ser:idType>passport</ser:idType>
+               <ser:idNumber>1231231</ser:idNumber>
+               <ser:idCountry>IN</ser:idCountry>
+               <ser:issueDate>2016-01-10</ser:issueDate>
+               <ser:expiryDate>2016-02-20</ser:expiryDate>
+            </ser:identity>
+            <ser:identity>
+               <ser:idType>birthcerti</ser:idType>
+               <ser:idNumber>12356</ser:idNumber>
+               <ser:idCountry>IN</ser:idCountry>
+               <ser:issueDate>2016-01-10</ser:issueDate>
+               <ser:expiryDate>2016-02-20</ser:expiryDate>
+            </ser:identity>
+            <ser:identity>
+               <ser:idType>dl</ser:idType>
+               <ser:idNumber>887655</ser:idNumber>
+               <ser:idCountry>IN</ser:idCountry>
+               <ser:issueDate>2016-01-10</ser:issueDate>
+               <ser:expiryDate>2016-02-20</ser:expiryDate>
+            </ser:identity>
+         </ser:remitterIdentities>
+         <ser:beneficiaryType>I</ser:beneficiaryType>
+         <ser:beneficiaryName>
+            <ser:fullName>DITTO</ser:fullName>
+         </ser:beneficiaryName>
+         <ser:beneficiaryAddress>
+            <ser:address1>addr1</ser:address1>
+            <!--Optional:-->
+            <ser:address2>addr2</ser:address2>
+            <!--Optional:-->
+            <ser:address3>addr3</ser:address3>
+            <!--Optional:-->
+            <ser:postalCode>222001</ser:postalCode>
+            <!--Optional:-->
+            <ser:city>Mumbai</ser:city>
+            <!--Optional:-->
+            <ser:stateOrProvince>Maharstar</ser:stateOrProvince>
+            <!--Optional:-->
+            <ser:country>IN</ser:country>
+         </ser:beneficiaryAddress>
+         <ser:beneficiaryContact>
+            <ser:mobileNo>8976613173</ser:mobileNo>
+            <ser:emailID>bene.a@gmail.com</ser:emailID>
+         </ser:beneficiaryContact>
+         <ser:beneficiaryIdentities>
+            <!--0 to 4 repetitions:-->
+            <ser:identity>
+               <ser:idType>passport1</ser:idType>
+               <ser:idNumber>1231231</ser:idNumber>
+               <ser:idCountry>IN</ser:idCountry>
+               <ser:issueDate>2016-01-10</ser:issueDate>
+               <ser:expiryDate>2016-02-20</ser:expiryDate>
+            </ser:identity>
+            <ser:identity>
+               <ser:idType>birthcerti1</ser:idType>
+               <ser:idNumber>12356</ser:idNumber>
+               <ser:idCountry>IN</ser:idCountry>
+               <ser:issueDate>2016-01-10</ser:issueDate>
+               <ser:expiryDate>2016-02-20</ser:expiryDate>
+            </ser:identity>
+         </ser:beneficiaryIdentities>
+         <ser:beneficiaryAccountNo>491990600011174</ser:beneficiaryAccountNo>
+         <ser:beneficiaryIFSC>HDFC0000001</ser:beneficiaryIFSC>
+         <ser:transferType>NEFT</ser:transferType>
+         <ser:transferCurrencyCode>INR</ser:transferCurrencyCode>
+         <ser:transferAmount>3000</ser:transferAmount>
+         <ser:remitterToBeneficiaryInfo>DITTO</ser:remitterToBeneficiaryInfo>
+         <ser:purposeCode>PC51</ser:purposeCode>
+      </ser:startRemit>
+   </soap:Body>
+</soap:Envelope>]]></con:request><con:credentials><con:username>guest</con:username><con:password>qg123$#</con:password><con:selectedAuthProfile>Basic</con:selectedAuthProfile><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:authType>Global HTTP Settings</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.quantiguous.com/services/InwardRemittanceByPartnerService2/startRemitRequest"/><con:wsrmConfig version="1.2"/></con:call></con:operation></con:interface><con:requirements/><con:properties/><con:wssContainer/><con:databaseConnectionContainer/><con:oAuth2ProfileContainer/><con:reporting><con:xmlTemplates/><con:parameters/></con:reporting><con:sensitiveInformation/></con:soapui-project>
