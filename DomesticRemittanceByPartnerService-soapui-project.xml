@@ -810,4 +810,129 @@
       <xsd:element name="toDate" type="xsd:date"/>
     </xsd:sequence>
   </xsd:complexType>
-</xsd:schema>]]></con:content><con:type>http://www.w3.org/2001/XMLSchema</con:type></con:part></con:definitionCache><con:endpoints><con:endpoint>http://api.quantiguous.com/DomesticRemittanceByPartnerService</con:endpoint></con:endpoints><con:operation id="3c5269f0-aec2-459b-bd60-e63c8514c401" isOneWay="false" action="http://www.quantiguous.com/services/DomesticRemittanceByPartnerService/getBalance" name="getBalance" bindingOperationName="getBalance" type="Request-Response" outputName="getBalanceResponse" inputName="getBalanceRequest" receivesAttachments="false" sendsAttachments="false"><con:settings/></con:operation><con:operation id="917569a7-7172-463c-8560-234f50d255bf" isOneWay="false" action="http://www.quantiguous.com/services/DomesticRemittanceByPartnerService/getRemittanceStatus" name="getRemittanceStatus" bindingOperationName="getRemittanceStatus" type="Request-Response" outputName="getRemittanceStatusResponse" inputName="getRemittanceStatusRequest" receivesAttachments="false" sendsAttachments="false"><con:settings/></con:operation><con:operation id="0829740b-17a2-43e4-9281-e07d68467ace" isOneWay="false" action="http://www.quantiguous.com/services/DomesticRemittanceByPartnerService/getTransactions" name="getTransactions" bindingOperationName="getTransactions" type="Request-Response" outputName="getTransactionsResponse" inputName="getTransactionsRequest" receivesAttachments="false" sendsAttachments="false"><con:settings/></con:operation><con:operation id="34d42756-765c-49ac-92a2-22c99c53643b" isOneWay="false" action="http://www.quantiguous.com/services/DomesticRemittanceByPartnerService/remit" name="remit" bindingOperationName="remit" type="Request-Response" outputName="remitResponse" inputName="remitRequest" receivesAttachments="false" sendsAttachments="false"><con:settings/></con:operation></con:interface><con:properties/><con:wssContainer/><con:databaseConnectionContainer/><con:oAuth2ProfileContainer/></con:soapui-project>
+</xsd:schema>]]></con:content><con:type>http://www.w3.org/2001/XMLSchema</con:type></con:part></con:definitionCache><con:endpoints><con:endpoint>http://api.quantiguous.com/DomesticRemittanceByPartnerService</con:endpoint></con:endpoints><con:operation id="3c5269f0-aec2-459b-bd60-e63c8514c401" isOneWay="false" action="http://www.quantiguous.com/services/DomesticRemittanceByPartnerService/getBalance" name="getBalance" bindingOperationName="getBalance" type="Request-Response" outputName="getBalanceResponse" inputName="getBalanceRequest" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="6c139d2b-6b08-4ac6-8be3-11b3717a2b18" name="Request 1"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>https://api.quantiguous.com/DomesticRemittanceByPartnerService</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:ser="http://www.quantiguous.com/services">
+   <soap:Header/>
+   <soap:Body>
+      <ser:getBalance>
+         <ser:version>1.0</ser:version>
+         <ser:partnerCode>smbone</ser:partnerCode>
+         <ser:customerID>2424</ser:customerID>
+         <ser:accountNo>001790700000090</ser:accountNo>
+      </ser:getBalance>
+   </soap:Body>
+</soap:Envelope>]]></con:request><con:credentials><con:username>guest</con:username><con:password>qg123$#</con:password><con:selectedAuthProfile>Basic</con:selectedAuthProfile><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:authType>Global HTTP Settings</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.quantiguous.com/services/DomesticRemittanceByPartnerService/getBalanceRequest"/><con:wsrmConfig version="1.2"/></con:call></con:operation><con:operation id="917569a7-7172-463c-8560-234f50d255bf" isOneWay="false" action="http://www.quantiguous.com/services/DomesticRemittanceByPartnerService/getRemittanceStatus" name="getRemittanceStatus" bindingOperationName="getRemittanceStatus" type="Request-Response" outputName="getRemittanceStatusResponse" inputName="getRemittanceStatusRequest" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="168ef926-8797-413e-8cfb-5954723c276b" name="Request 1"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>https://api.quantiguous.com/DomesticRemittanceByPartnerService</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:ser="http://www.quantiguous.com/services">
+   <soap:Header/>
+   <soap:Body>
+      <ser:getRemittanceStatus>
+         <ser:version>1.0</ser:version>
+         <ser:partnerCode>smbone</ser:partnerCode>
+         <ser:requestReferenceNo>SM162461425</ser:requestReferenceNo>
+      </ser:getRemittanceStatus>
+   </soap:Body>
+</soap:Envelope>]]></con:request><con:credentials><con:username>guest</con:username><con:password>qg123$#</con:password><con:selectedAuthProfile>Basic</con:selectedAuthProfile><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:authType>Global HTTP Settings</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.quantiguous.com/services/DomesticRemittanceByPartnerService/getRemittanceStatusRequest"/><con:wsrmConfig version="1.2"/></con:call></con:operation><con:operation id="0829740b-17a2-43e4-9281-e07d68467ace" isOneWay="false" action="http://www.quantiguous.com/services/DomesticRemittanceByPartnerService/getTransactions" name="getTransactions" bindingOperationName="getTransactions" type="Request-Response" outputName="getTransactionsResponse" inputName="getTransactionsRequest" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="09969b32-f3f0-4ba7-81c4-fcad7e90bcf0" name="Request 1"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>https://api.quantiguous.com/DomesticRemittanceByPartnerService</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:ser="http://www.quantiguous.com/services">
+   <soap:Header/>
+   <soap:Body>
+      <ser:getTransactions>
+         <ser:version>1.0</ser:version>
+         <ser:partnerCode>smbone</ser:partnerCode>
+         <ser:customerID>2424</ser:customerID>
+         <ser:accountNo>001790700000090</ser:accountNo>
+         <ser:dateRange>
+            <ser:fromDate>2017-01-01</ser:fromDate>
+            <ser:toDate>2017-01-02</ser:toDate>
+         </ser:dateRange>
+      </ser:getTransactions>
+   </soap:Body>
+</soap:Envelope>]]></con:request><con:credentials><con:username>guest</con:username><con:password>qg123$#</con:password><con:selectedAuthProfile>Basic</con:selectedAuthProfile><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:authType>Global HTTP Settings</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.quantiguous.com/services/DomesticRemittanceByPartnerService/getTransactionsRequest"/><con:wsrmConfig version="1.2"/></con:call></con:operation><con:operation id="34d42756-765c-49ac-92a2-22c99c53643b" isOneWay="false" action="http://www.quantiguous.com/services/DomesticRemittanceByPartnerService/remit" name="remit" bindingOperationName="remit" type="Request-Response" outputName="remitResponse" inputName="remitRequest" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="73d41cda-95fb-409c-b2cc-5f551f4820e4" name="ditto - NEFT"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>https://api.quantiguous.com/DomesticRemittanceByPartnerService</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:NS1="http://www.quantiguous.com/services">
+   <soap:Header/>
+   <soap:Body>
+      <NS1:remit>
+         <NS1:version>1</NS1:version>
+         <NS1:uniqueRequestNo>SM162461425</NS1:uniqueRequestNo>
+         <NS1:partnerCode>smbone</NS1:partnerCode>
+         <NS1:customerID>2424</NS1:customerID>
+         <NS1:debitAccountNo>001790700000090</NS1:debitAccountNo>
+         <NS1:remitterAccountNo>001790700000090</NS1:remitterAccountNo>
+         <NS1:remitterIFSC>HDFC0000112</NS1:remitterIFSC>
+         <NS1:beneficiaryName>DITTO</NS1:beneficiaryName>
+         <NS1:beneficiaryAddress>
+            <NS1:address1>NEW</NS1:address1>
+         </NS1:beneficiaryAddress>
+         <NS1:beneficiaryAccountNo>751990600011174</NS1:beneficiaryAccountNo>
+         <NS1:beneficiaryIFSC>HDFC0000262</NS1:beneficiaryIFSC>
+         <NS1:transferType>NEFT</NS1:transferType>
+         <NS1:transferCurrencyCode>INR</NS1:transferCurrencyCode>
+         <NS1:transferAmount>500</NS1:transferAmount>
+         <NS1:remitterToBeneficiaryInfo>DITTO</NS1:remitterToBeneficiaryInfo>
+      </NS1:remit>
+   </soap:Body>
+</soap:Envelope>]]></con:request><con:credentials><con:username>guest</con:username><con:password>qg123$#</con:password><con:selectedAuthProfile>Basic</con:selectedAuthProfile><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:authType>Global HTTP Settings</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.quantiguous.com/services/DomesticRemittanceByPartnerService/remitRequest"/><con:wsrmConfig version="1.2"/></con:call><con:call id="b64596e7-2b38-4c26-996d-2b58699e210b" name="ditto - FT"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>https://api.quantiguous.com/DomesticRemittanceByPartnerService</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:NS1="http://www.quantiguous.com/services">
+   <soap:Header/>
+   <soap:Body>
+      <NS1:remit>
+         <NS1:version>1</NS1:version>
+         <NS1:uniqueRequestNo>SM162425</NS1:uniqueRequestNo>
+         <NS1:partnerCode>smbone</NS1:partnerCode>
+         <NS1:customerID>2424</NS1:customerID>
+         <NS1:debitAccountNo>001790700000090</NS1:debitAccountNo>
+         <NS1:remitterAccountNo>001790700000090</NS1:remitterAccountNo>
+         <NS1:remitterIFSC>HDFC0000112</NS1:remitterIFSC>
+         <NS1:beneficiaryName>DITTO</NS1:beneficiaryName>
+         <NS1:beneficiaryAddress>
+            <NS1:address1>NEW</NS1:address1>
+         </NS1:beneficiaryAddress>
+         <NS1:beneficiaryAccountNo>751990600011174</NS1:beneficiaryAccountNo>
+         <NS1:beneficiaryIFSC>YESB0000262</NS1:beneficiaryIFSC>
+         <NS1:transferType>FT</NS1:transferType>
+         <NS1:transferCurrencyCode>INR</NS1:transferCurrencyCode>
+         <NS1:transferAmount>500</NS1:transferAmount>
+         <NS1:remitterToBeneficiaryInfo>DITTO</NS1:remitterToBeneficiaryInfo>
+      </NS1:remit>
+   </soap:Body>
+</soap:Envelope>]]></con:request><con:credentials><con:username>guest</con:username><con:password>qg123$#</con:password><con:selectedAuthProfile>Basic</con:selectedAuthProfile><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:authType>Global HTTP Settings</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.quantiguous.com/services/DomesticRemittanceByPartnerService/remitRequest"/><con:wsrmConfig version="1.2"/></con:call><con:call id="d535a76f-cc5a-4e12-89c7-3c88d065d134" name="ditto - NEFT timedout (success)"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>https://api.quantiguous.com/DomesticRemittanceByPartnerService</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:NS1="http://www.quantiguous.com/services">
+   <soap:Header/>
+   <soap:Body>
+      <NS1:remit>
+         <NS1:version>1</NS1:version>
+         <NS1:uniqueRequestNo>SM1625</NS1:uniqueRequestNo>
+         <NS1:partnerCode>smbone</NS1:partnerCode>
+         <NS1:customerID>2424</NS1:customerID>
+         <NS1:debitAccountNo>001790700000090</NS1:debitAccountNo>
+         <NS1:remitterAccountNo>001790700000090</NS1:remitterAccountNo>
+         <NS1:remitterIFSC>HDFC0000112</NS1:remitterIFSC>
+         <NS1:beneficiaryName>DITTO DELAY</NS1:beneficiaryName>
+         <NS1:beneficiaryAddress>
+            <NS1:address1>NEW</NS1:address1>
+         </NS1:beneficiaryAddress>
+         <NS1:beneficiaryAccountNo>751990600011174</NS1:beneficiaryAccountNo>
+         <NS1:beneficiaryIFSC>HDFC0000262</NS1:beneficiaryIFSC>
+         <NS1:transferType>NEFT</NS1:transferType>
+         <NS1:transferCurrencyCode>INR</NS1:transferCurrencyCode>
+         <NS1:transferAmount>500</NS1:transferAmount>
+         <NS1:remitterToBeneficiaryInfo>DITTO DELAY</NS1:remitterToBeneficiaryInfo>
+      </NS1:remit>
+   </soap:Body>
+</soap:Envelope>]]></con:request><con:credentials><con:username>guest</con:username><con:password>qg123$#</con:password><con:selectedAuthProfile>Basic</con:selectedAuthProfile><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:authType>Global HTTP Settings</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.quantiguous.com/services/DomesticRemittanceByPartnerService/remitRequest"/><con:wsrmConfig version="1.2"/></con:call><con:call id="6097d80c-a848-4efd-a258-545311e2cc98" name="ditto - NEFT(SCHEDULED for next work day)"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>https://api.quantiguous.com/DomesticRemittanceByPartnerService</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:NS1="http://www.quantiguous.com/services">
+   <soap:Header/>
+   <soap:Body>
+      <NS1:remit>
+         <NS1:version>1</NS1:version>
+         <NS1:uniqueRequestNo>SM1624614258125</NS1:uniqueRequestNo>
+         <NS1:partnerCode>smbone</NS1:partnerCode>
+         <NS1:customerID>2424</NS1:customerID>
+         <NS1:debitAccountNo>001790700000090</NS1:debitAccountNo>
+         <NS1:remitterAccountNo>001790700000090</NS1:remitterAccountNo>
+         <NS1:remitterIFSC>HDFC0000112</NS1:remitterIFSC>
+         <NS1:beneficiaryName>DITTO</NS1:beneficiaryName>
+         <NS1:beneficiaryAddress>
+            <NS1:address1>NEW</NS1:address1>
+         </NS1:beneficiaryAddress>
+         <NS1:beneficiaryAccountNo>491990600011174</NS1:beneficiaryAccountNo>
+         <NS1:beneficiaryIFSC>HDFC0000262</NS1:beneficiaryIFSC>
+         <NS1:transferType>NEFT</NS1:transferType>
+         <NS1:transferCurrencyCode>INR</NS1:transferCurrencyCode>
+         <NS1:transferAmount>500</NS1:transferAmount>
+         <NS1:remitterToBeneficiaryInfo>DITTO</NS1:remitterToBeneficiaryInfo>
+      </NS1:remit>
+   </soap:Body>
+</soap:Envelope>]]></con:request><con:credentials><con:username>guest</con:username><con:password>qg123$#</con:password><con:selectedAuthProfile>Basic</con:selectedAuthProfile><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:authType>Global HTTP Settings</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.quantiguous.com/services/DomesticRemittanceByPartnerService/remitRequest"/><con:wsrmConfig version="1.2"/></con:call></con:operation></con:interface><con:properties/><con:wssContainer/><con:databaseConnectionContainer/><con:oAuth2ProfileContainer/><con:reporting><con:xmlTemplates/><con:parameters/></con:reporting></con:soapui-project>
