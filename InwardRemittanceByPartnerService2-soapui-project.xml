@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:soapui-project id="d5211b52-67f2-466e-8a0d-3f49f42c68bb" activeEnvironment="Default" name="InwardRemittanceByPartnerService2" resourceRoot="" soapui-version="5.1.1" xmlns:con="http://eviware.com/soapui/config"><con:settings/><con:interface xsi:type="con:WsdlInterface" id="496a77e5-69c9-4679-bf1b-dc9b129033de" wsaVersion="NONE" name="InwardRemittanceByPartnerService2HttpBinding" type="wsdl" bindingName="{http://www.quantiguous.com/services}InwardRemittanceByPartnerService2HttpBinding" soapVersion="1_2" anonymous="optional" definition="https://api.quantiguous.com/InwardRemittanceByPartnerService2?wsdl" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache type="TEXT" rootPart="https://api.quantiguous.com/InwardRemittanceByPartnerService2?wsdl"><con:part><con:url>https://api.quantiguous.com/InwardRemittanceByPartnerService2?wsdl</con:url><con:content><![CDATA[<wsdl:definitions name="InwardRemittanceByPartnerService2" targetNamespace="http://www.quantiguous.com/services" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:tns="http://www.quantiguous.com/services" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+<con:soapui-project id="d5211b52-67f2-466e-8a0d-3f49f42c68bb" activeEnvironment="Default" name="InwardRemittanceByPartnerService2" resourceRoot="" soapui-version="5.1.1" xmlns:con="http://eviware.com/soapui/config"><con:settings/><con:interface xsi:type="con:WsdlInterface" id="496a77e5-69c9-4679-bf1b-dc9b129033de" wsaVersion="NONE" name="InwardRemittanceByPartnerService2HttpBinding" type="wsdl" bindingName="{http://www.quantiguous.com/services}InwardRemittanceByPartnerService2HttpBinding" soapVersion="1_2" anonymous="optional" definition="https://apidemo.quantiguous.com/InwardRemittanceByPartnerService2?wsdl" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache type="TEXT" rootPart="https://apidemo.quantiguous.com/InwardRemittanceByPartnerService2?wsdl"><con:part><con:url>https://apidemo.quantiguous.com/InwardRemittanceByPartnerService2?wsdl</con:url><con:content><![CDATA[<wsdl:definitions name="InwardRemittanceByPartnerService2" targetNamespace="http://www.quantiguous.com/services" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:tns="http://www.quantiguous.com/services" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <wsdl:documentation>
     <wsdl:appinfo source="WMQI_APPINFO">
       <MRWSDLAppInfo imported="true">
@@ -10,7 +10,7 @@
   </wsdl:documentation>
   <wsdl:types>
     <xsd:schema targetNamespace="http://www.quantiguous.com/services" xmlns:ibmSchExtn="http://www.ibm.com/schema/extensions">
-      <xsd:include schemaLocation="http://api.quantiguous.com/InwardRemittanceByPartnerService2?xsd=xsd0"/>
+      <xsd:include schemaLocation="http://apidemo.quantiguous.com/InwardRemittanceByPartnerService2?xsd=xsd0"/>
     </xsd:schema>
   </wsdl:types>
   <wsdl:message name="startRemitRequestMsg">
@@ -83,10 +83,10 @@ In case a Soap Fault is received, the request may be re-tried, as the service id
   </wsdl:binding>
   <wsdl:service name="InwardRemittanceByPartnerService2HttpService">
     <wsdl:port binding="tns:InwardRemittanceByPartnerService2HttpBinding" name="InwardRemittanceByPartnerService2HttpPort">
-      <soap12:address location="http://api.quantiguous.com/InwardRemittanceByPartnerService2"/>
+      <soap12:address location="http://apidemo.quantiguous.com/InwardRemittanceByPartnerService2"/>
     </wsdl:port>
   </wsdl:service>
-</wsdl:definitions>]]></con:content><con:type>http://schemas.xmlsoap.org/wsdl/</con:type></con:part><con:part><con:url>http://api.quantiguous.com/InwardRemittanceByPartnerService2?xsd=xsd0</con:url><con:content><![CDATA[<xsd:schema elementFormDefault="qualified" targetNamespace="http://www.quantiguous.com/services" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:ibmSchExtn="http://www.ibm.com/schema/extensions" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:tns="http://www.quantiguous.com/services" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+</wsdl:definitions>]]></con:content><con:type>http://schemas.xmlsoap.org/wsdl/</con:type></con:part><con:part><con:url>http://apidemo.quantiguous.com/InwardRemittanceByPartnerService2?xsd=xsd0</con:url><con:content><![CDATA[<xsd:schema elementFormDefault="qualified" targetNamespace="http://www.quantiguous.com/services" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:ibmSchExtn="http://www.ibm.com/schema/extensions" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:tns="http://www.quantiguous.com/services" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
   <xsd:element ibmSchExtn:docRoot="true" name="startRemit">
     <xsd:complexType>
       <xsd:sequence>
@@ -127,7 +127,7 @@ In case a Soap Fault is received, the request may be re-tried, as the service id
 							are provided. Provide the mobile, email or both.</xsd:documentation>
           </xsd:annotation>
         </xsd:element>
-        <xsd:element name="remitterIdentities" type="tns:IdentitiesArray">
+        <xsd:element name="remitterIdentities" type="tns:remitterIdentitiesArray">
           <xsd:annotation>
             <xsd:documentation>The identities of the remitter. These are
 							required in cases where the remitter name is
@@ -172,7 +172,7 @@ In case a Soap Fault is received, the request may be re-tried, as the service id
 							these details are provided.</xsd:documentation>
           </xsd:annotation>
         </xsd:element>
-        <xsd:element name="beneficiaryIdentities" type="tns:IdentitiesArray">
+        <xsd:element name="beneficiaryIdentities" type="tns:beneficiaryIdentitiesArray">
           <xsd:annotation>
             <xsd:documentation>The identities of the beneficiary. These are
 							required in cases where the remitter name is
@@ -421,7 +421,12 @@ In case of NA the reason for the rejection will be available in subStatusCode wh
       <xsd:pattern value="PC\d{2}"/>
     </xsd:restriction>
   </xsd:simpleType>
-  <xsd:complexType name="IdentitiesArray">
+  <xsd:complexType name="remitterIdentitiesArray">
+    <xsd:sequence>
+      <xsd:element maxOccurs="4" minOccurs="0" name="identity" type="tns:IdentityType"/>
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="beneficiaryIdentitiesArray">
     <xsd:sequence>
       <xsd:element maxOccurs="4" minOccurs="0" name="identity" type="tns:IdentityType"/>
     </xsd:sequence>
@@ -453,6 +458,7 @@ In case of NA the reason for the rejection will be available in subStatusCode wh
             <xsd:enumeration value="SENT_TO_BENEFICIARY"/>
             <xsd:enumeration value="RETURNED_FROM_BENEFICIARY"/>
             <xsd:enumeration value="COMPLETED"/>
+            <xsd:enumeration value="ONHOLD"/>
           </xsd:restriction>
         </xsd:simpleType>
       </xsd:element>
@@ -862,7 +868,7 @@ It is possible to ask for 'ANY', in which case the best transfer method will be 
             </xsd:restriction>
           </xsd:simpleType>
         </xsd:element>
-        <xsd:element name="idCountry">
+        <xsd:element maxOccurs="1" minOccurs="0" name="idCountry">
           <xsd:annotation>
             <xsd:documentation>The ISO 3166-1 alpha-2 country code (IN = India, US = United Stated of America). Refer http://en.wikipedia.org/wiki/ISO_3166-1</xsd:documentation>
           </xsd:annotation>
@@ -873,12 +879,12 @@ It is possible to ask for 'ANY', in which case the best transfer method will be 
             </xsd:restriction>
           </xsd:simpleType>
         </xsd:element>
-        <xsd:element name="issueDate" type="xsd:date"/>
-        <xsd:element name="expiryDate" type="xsd:date"/>
+        <xsd:element maxOccurs="1" minOccurs="0" name="issueDate" type="xsd:date"/>
+        <xsd:element maxOccurs="1" minOccurs="0" name="expiryDate" type="xsd:date"/>
       </xsd:sequence>
     </xsd:choice>
   </xsd:complexType>
-</xsd:schema>]]></con:content><con:type>http://www.w3.org/2001/XMLSchema</con:type></con:part></con:definitionCache><con:endpoints><con:endpoint>http://api.quantiguous.com/InwardRemittanceByPartnerService2</con:endpoint></con:endpoints><con:operation id="51865db4-dbcd-4be0-978a-99a060c5b972" isOneWay="false" action="http://www.quantiguous.com/services/InwardRemittanceByPartnerService2/getBalance" name="getBalance" bindingOperationName="getBalance" type="Request-Response" outputName="getBalanceResponse" inputName="getBalanceRequest" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="831c74e8-e726-4dce-a4f7-992fc038e2f4" name="Request 1"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>https://api.quantiguous.com/InwardRemittanceByPartnerService2</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:ser="http://www.quantiguous.com/services">
+</xsd:schema>]]></con:content><con:type>http://www.w3.org/2001/XMLSchema</con:type></con:part></con:definitionCache><con:endpoints><con:endpoint>http://api.quantiguous.com/InwardRemittanceByPartnerService2</con:endpoint><con:endpoint>https://apidemo.quantiguous.com/InwardRemittanceByPartnerService2</con:endpoint></con:endpoints><con:operation id="51865db4-dbcd-4be0-978a-99a060c5b972" isOneWay="false" action="http://www.quantiguous.com/services/InwardRemittanceByPartnerService2/getBalance" name="getBalance" bindingOperationName="getBalance" type="Request-Response" outputName="getBalanceResponse" inputName="getBalanceRequest" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="831c74e8-e726-4dce-a4f7-992fc038e2f4" name="Request 1"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint xsi:nil="true"/><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:ser="http://www.quantiguous.com/services">
    <soap:Header/>
    <soap:Body>
       <ser:getBalance>
@@ -886,16 +892,16 @@ It is possible to ask for 'ANY', in which case the best transfer method will be 
          <ser:partnerCode>PC99</ser:partnerCode>
       </ser:getBalance>
    </soap:Body>
-</soap:Envelope>]]></con:request><con:credentials><con:username>guest</con:username><con:password>qg123$#</con:password><con:selectedAuthProfile>Basic</con:selectedAuthProfile><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:authType>Global HTTP Settings</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.quantiguous.com/services/InwardRemittanceByPartnerService2/getBalanceRequest"/><con:wsrmConfig version="1.2"/></con:call></con:operation><con:operation id="67369a5f-5eaa-486a-8e3c-1fdf2c04135a" isOneWay="false" action="http://www.quantiguous.com/services/InwardRemittanceByPartnerService2/getStatus" name="getStatus" bindingOperationName="getStatus" type="Request-Response" outputName="getStatusResponse" inputName="getStatusRequest" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="ad92d95e-3283-4002-8e5a-e1a43f5bc8c7" name="Request 1"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>https://api.quantiguous.com/InwardRemittanceByPartnerService2</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:ser="http://www.quantiguous.com/services">
+</soap:Envelope>]]></con:request><con:credentials><con:username>guest</con:username><con:password>qg123$#</con:password><con:selectedAuthProfile>Basic</con:selectedAuthProfile><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:authType>Global HTTP Settings</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.quantiguous.com/services/InwardRemittanceByPartnerService2/getBalanceRequest"/><con:wsrmConfig version="1.2"/></con:call></con:operation><con:operation id="67369a5f-5eaa-486a-8e3c-1fdf2c04135a" isOneWay="false" action="http://www.quantiguous.com/services/InwardRemittanceByPartnerService2/getStatus" name="getStatus" bindingOperationName="getStatus" type="Request-Response" outputName="getStatusResponse" inputName="getStatusRequest" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="ad92d95e-3283-4002-8e5a-e1a43f5bc8c7" name="Request 1"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>https://apidemo.quantiguous.com/InwardRemittanceByPartnerService2</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:ser="http://www.quantiguous.com/services">
    <soap:Header/>
    <soap:Body>
       <ser:getStatus>
          <ser:version>1.0</ser:version>
-         <ser:partnerCode>PC99</ser:partnerCode>
-         <ser:requestReferenceNo>NEFTTEST101213</ser:requestReferenceNo>
+         <ser:partnerCode>QG3</ser:partnerCode>
+         <ser:requestReferenceNo>cremit007</ser:requestReferenceNo>
       </ser:getStatus>
    </soap:Body>
-</soap:Envelope>]]></con:request><con:credentials><con:username>guest</con:username><con:password>qg123$#</con:password><con:selectedAuthProfile>Basic</con:selectedAuthProfile><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:authType>Global HTTP Settings</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.quantiguous.com/services/InwardRemittanceByPartnerService2/getStatusRequest"/><con:wsrmConfig version="1.2"/></con:call></con:operation><con:operation id="afd94d4c-7a2d-4406-99ee-a33cd475d172" isOneWay="false" action="http://www.quantiguous.com/services/InwardRemittanceByPartnerService2/startRemit" name="startRemit" bindingOperationName="startRemit" type="Request-Response" outputName="startRemitResponse" inputName="startRemitRequest" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="36956b86-2285-430f-b2dd-ef2327e41660" name="ditto - NEFT"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>https://api.quantiguous.com/InwardRemittanceByPartnerService2</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:ser="http://www.quantiguous.com/services">
+</soap:Envelope>]]></con:request><con:credentials><con:username>guest</con:username><con:password>qg123$#</con:password><con:selectedAuthProfile>Basic</con:selectedAuthProfile><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:authType>Global HTTP Settings</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.quantiguous.com/services/InwardRemittanceByPartnerService2/getStatusRequest"/><con:wsrmConfig version="1.2"/></con:call></con:operation><con:operation id="afd94d4c-7a2d-4406-99ee-a33cd475d172" isOneWay="false" action="http://www.quantiguous.com/services/InwardRemittanceByPartnerService2/startRemit" name="startRemit" bindingOperationName="startRemit" type="Request-Response" outputName="startRemitResponse" inputName="startRemitRequest" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="36956b86-2285-430f-b2dd-ef2327e41660" name="ditto - NEFT"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint xsi:nil="true"/><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:ser="http://www.quantiguous.com/services">
    <soap:Header/>
    <soap:Body>
       <ser:startRemit>
@@ -997,7 +1003,7 @@ It is possible to ask for 'ANY', in which case the best transfer method will be 
          <ser:purposeCode>PC10</ser:purposeCode>
       </ser:startRemit>
    </soap:Body>
-</soap:Envelope>]]></con:request><con:credentials><con:username>guest</con:username><con:password>qg123$#</con:password><con:selectedAuthProfile>Basic</con:selectedAuthProfile><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:authType>Global HTTP Settings</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.quantiguous.com/services/InwardRemittanceByPartnerService2/startRemitRequest"/><con:wsrmConfig version="1.2"/></con:call><con:call id="32c9da10-8ed5-472c-97ed-32bbb1e583e0" name="ditto - FT"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>https://api.quantiguous.com/InwardRemittanceByPartnerService2</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:ser="http://www.quantiguous.com/services">
+</soap:Envelope>]]></con:request><con:credentials><con:username>guest</con:username><con:password>qg123$#</con:password><con:selectedAuthProfile>Basic</con:selectedAuthProfile><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:authType>Global HTTP Settings</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.quantiguous.com/services/InwardRemittanceByPartnerService2/startRemitRequest"/><con:wsrmConfig version="1.2"/></con:call><con:call id="32c9da10-8ed5-472c-97ed-32bbb1e583e0" name="ditto - FT"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint xsi:nil="true"/><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:ser="http://www.quantiguous.com/services">
    <soap:Header/>
    <soap:Body>
       <ser:startRemit>
@@ -1099,7 +1105,7 @@ It is possible to ask for 'ANY', in which case the best transfer method will be 
          <ser:purposeCode>PC10</ser:purposeCode>
       </ser:startRemit>
    </soap:Body>
-</soap:Envelope>]]></con:request><con:credentials><con:username>guest</con:username><con:password>qg123$#</con:password><con:selectedAuthProfile>Basic</con:selectedAuthProfile><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:authType>Global HTTP Settings</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.quantiguous.com/services/InwardRemittanceByPartnerService2/startRemitRequest"/><con:wsrmConfig version="1.2"/></con:call><con:call id="8eabf147-6eb0-4e37-9a1e-647c470039f9" name="ditto - IMPS"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>https://api.quantiguous.com/InwardRemittanceByPartnerService2</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:ser="http://www.quantiguous.com/services">
+</soap:Envelope>]]></con:request><con:credentials><con:username>guest</con:username><con:password>qg123$#</con:password><con:selectedAuthProfile>Basic</con:selectedAuthProfile><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:authType>Global HTTP Settings</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.quantiguous.com/services/InwardRemittanceByPartnerService2/startRemitRequest"/><con:wsrmConfig version="1.2"/></con:call><con:call id="8eabf147-6eb0-4e37-9a1e-647c470039f9" name="ditto - IMPS"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint xsi:nil="true"/><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:ser="http://www.quantiguous.com/services">
    <soap:Header/>
    <soap:Body>
       <ser:startRemit>
@@ -1201,7 +1207,7 @@ It is possible to ask for 'ANY', in which case the best transfer method will be 
          <ser:purposeCode>PC06</ser:purposeCode>
       </ser:startRemit>
    </soap:Body>
-</soap:Envelope>]]></con:request><con:credentials><con:username>guest</con:username><con:password>qg123$#</con:password><con:selectedAuthProfile>Basic</con:selectedAuthProfile><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:authType>Global HTTP Settings</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.quantiguous.com/services/InwardRemittanceByPartnerService2/startRemitRequest"/><con:wsrmConfig version="1.2"/></con:call><con:call id="90f4b179-7824-4071-89ee-bdfa97fb1e0e" name="ditto timedout - RTGS(success)"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>https://api.quantiguous.com/InwardRemittanceByPartnerService2</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:ser="http://www.quantiguous.com/services">
+</soap:Envelope>]]></con:request><con:credentials><con:username>guest</con:username><con:password>qg123$#</con:password><con:selectedAuthProfile>Basic</con:selectedAuthProfile><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:authType>Global HTTP Settings</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.quantiguous.com/services/InwardRemittanceByPartnerService2/startRemitRequest"/><con:wsrmConfig version="1.2"/></con:call><con:call id="90f4b179-7824-4071-89ee-bdfa97fb1e0e" name="ditto timedout - RTGS(success)"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint xsi:nil="true"/><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:ser="http://www.quantiguous.com/services">
    <soap:Header/>
    <soap:Body>
       <ser:startRemit>
@@ -1303,7 +1309,7 @@ It is possible to ask for 'ANY', in which case the best transfer method will be 
          <ser:purposeCode>PC51</ser:purposeCode>
       </ser:startRemit>
    </soap:Body>
-</soap:Envelope>]]></con:request><con:credentials><con:username>guest</con:username><con:password>qg123$#</con:password><con:selectedAuthProfile>Basic</con:selectedAuthProfile><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:authType>Global HTTP Settings</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.quantiguous.com/services/InwardRemittanceByPartnerService2/startRemitRequest"/><con:wsrmConfig version="1.2"/></con:call><con:call id="45b9918f-ce11-4e16-8a5c-cc57daebdac5" name="ditto  - NEFT - scheduled for next work day"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>https://api.quantiguous.com/InwardRemittanceByPartnerService2</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:ser="http://www.quantiguous.com/services">
+</soap:Envelope>]]></con:request><con:credentials><con:username>guest</con:username><con:password>qg123$#</con:password><con:selectedAuthProfile>Basic</con:selectedAuthProfile><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:authType>Global HTTP Settings</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.quantiguous.com/services/InwardRemittanceByPartnerService2/startRemitRequest"/><con:wsrmConfig version="1.2"/></con:call><con:call id="45b9918f-ce11-4e16-8a5c-cc57daebdac5" name="ditto  - NEFT - scheduled for next work day"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint xsi:nil="true"/><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:ser="http://www.quantiguous.com/services">
    <soap:Header/>
    <soap:Body>
       <ser:startRemit>
@@ -1403,6 +1409,172 @@ It is possible to ask for 'ANY', in which case the best transfer method will be 
          <ser:transferAmount>3000</ser:transferAmount>
          <ser:remitterToBeneficiaryInfo>DITTO</ser:remitterToBeneficiaryInfo>
          <ser:purposeCode>PC51</ser:purposeCode>
+      </ser:startRemit>
+   </soap:Body>
+</soap:Envelope>]]></con:request><con:credentials><con:username>guest</con:username><con:password>qg123$#</con:password><con:selectedAuthProfile>Basic</con:selectedAuthProfile><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:authType>Global HTTP Settings</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.quantiguous.com/services/InwardRemittanceByPartnerService2/startRemitRequest"/><con:wsrmConfig version="1.2"/></con:call><con:call id="7f08dc47-eb9d-46e6-8bd5-1aebf55215f8" name="apid - bad remitter name with imps with hold for whitelisting"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>https://apidemo.quantiguous.com/InwardRemittanceByPartnerService2</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:ser="http://www.quantiguous.com/services" xmlns:NS1="http://www.quantiguous.com/services">
+   <soap:Header/>
+   <soap:Body>
+      <ser:startRemit>
+         <ser:version>1.0</ser:version>
+         <ser:uniqueRequestNo>acremit004</ser:uniqueRequestNo>
+         <ser:partnerCode>QG2</ser:partnerCode>
+         <ser:remitterType>I</ser:remitterType>
+         <ser:remitterName>
+            <ser:fullName>Kamal Mustafa Sultan Abdallah</ser:fullName>
+         </ser:remitterName>
+         <!--Optional:-->
+         <ser:remitterAddress>
+            <ser:address1>201 akarwan</ser:address1>
+            <!--Optional:-->
+            <ser:address2>1827jhvs</ser:address2>
+            <!--Optional:-->
+            <ser:address3>taliban</ser:address3>
+            <!--Optional:-->
+            <ser:postalCode>444001</ser:postalCode>
+            <!--Optional:-->
+            <ser:city>taliban</ser:city>
+            <!--Optional:-->
+            <ser:stateOrProvince>Taliban</ser:stateOrProvince>
+            <!--Optional:-->
+            <ser:country>IN</ser:country>
+         </ser:remitterAddress>
+         <ser:remitterContact>
+            <!--Optional:-->
+            <ser:mobileNo>8976613173</ser:mobileNo>
+            <!--Optional:-->
+            <ser:emailID>dj.sreyas@gmail.com</ser:emailID>
+         </ser:remitterContact>
+         <ser:remitterIdentities><!--0 to 4 repetitions:-->
+            <ser:identity>
+               <ser:idType>PAN Card</ser:idType>
+               <ser:idNumber>123409</ser:idNumber>
+               <!--Optional:-->
+               <ser:idCountry>IN</ser:idCountry>
+               <!--Optional:-->
+               <ser:issueDate>2016-09-09</ser:issueDate>
+               <!--Optional:-->
+               <ser:expiryDate>2018-09-09</ser:expiryDate>
+            </ser:identity>
+         </ser:remitterIdentities>
+         <ser:beneficiaryType>I</ser:beneficiaryType>
+         <ser:beneficiaryName>
+            <ser:fullName>DITTO</ser:fullName>
+         </ser:beneficiaryName>
+         <!--Optional:-->
+         <ser:beneficiaryAddress>
+            <ser:address1>addr1</ser:address1>
+            <!--Optional:-->
+            <ser:address2>addr2</ser:address2>
+            <!--Optional:-->
+            <ser:address3>addr3</ser:address3>
+            <!--Optional:-->
+            <ser:postalCode>222001</ser:postalCode>
+            <!--Optional:-->
+            <ser:city>Mumbai</ser:city>
+            <!--Optional:-->
+            <ser:stateOrProvince>Maharstar</ser:stateOrProvince>
+            <!--Optional:-->
+            <ser:country>IN</ser:country>
+         </ser:beneficiaryAddress>
+         <ser:beneficiaryContact>
+            <!--Optional:-->
+            <ser:mobileNo>8976613173</ser:mobileNo>
+            <!--Optional:-->
+            <ser:emailID>bene.a@gmail.com</ser:emailID>
+         </ser:beneficiaryContact>
+         <ser:beneficiaryIdentities><!--0 to 4 repetitions:-->
+ 
+         </ser:beneficiaryIdentities>
+         <ser:beneficiaryAccountNo>EE91TCC</ser:beneficiaryAccountNo>
+         <ser:beneficiaryIFSC>HDFC0123456</ser:beneficiaryIFSC>
+         <ser:transferType>IMPS</ser:transferType>
+         <ser:transferCurrencyCode>INR</ser:transferCurrencyCode>
+         <ser:transferAmount>200</ser:transferAmount>
+         <ser:remitterToBeneficiaryInfo>DITTO</ser:remitterToBeneficiaryInfo>
+         <ser:purposeCode>PC10</ser:purposeCode>
+      </ser:startRemit>
+   </soap:Body>
+</soap:Envelope>]]></con:request><con:credentials><con:username>guest</con:username><con:password>qg123$#</con:password><con:selectedAuthProfile>Basic</con:selectedAuthProfile><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:authType>Global HTTP Settings</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.quantiguous.com/services/InwardRemittanceByPartnerService2/startRemitRequest"/><con:wsrmConfig version="1.2"/></con:call><con:call id="874dacf6-f3f0-4653-b89b-4de373992b53" name="apid - bad remitter name with imps with hold for whitelisting auto match = N"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>https://apidemo.quantiguous.com/InwardRemittanceByPartnerService2</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:ser="http://www.quantiguous.com/services" xmlns:NS1="http://www.quantiguous.com/services">
+   <soap:Header/>
+   <soap:Body>
+      <ser:startRemit>
+         <ser:version>1.0</ser:version>
+         <ser:uniqueRequestNo>cremit007</ser:uniqueRequestNo>
+         <ser:partnerCode>QG3</ser:partnerCode>
+         <ser:remitterType>I</ser:remitterType>
+         <ser:remitterName>
+            <ser:fullName>Kamal Mustafa Sultan Abdallah</ser:fullName>
+         </ser:remitterName>
+         <!--Optional:-->
+         <ser:remitterAddress>
+            <ser:address1>201 akarwan</ser:address1>
+            <!--Optional:-->
+            <ser:address2>1827jhvs</ser:address2>
+            <!--Optional:-->
+            <ser:address3>taliban</ser:address3>
+            <!--Optional:-->
+            <ser:postalCode>444001</ser:postalCode>
+            <!--Optional:-->
+            <ser:city>taliban</ser:city>
+            <!--Optional:-->
+            <ser:stateOrProvince>Taliban</ser:stateOrProvince>
+            <!--Optional:-->
+            <ser:country>IN</ser:country>
+         </ser:remitterAddress>
+         <ser:remitterContact>
+            <!--Optional:-->
+            <ser:mobileNo>8976613173</ser:mobileNo>
+            <!--Optional:-->
+            <ser:emailID>dj.sreyas@gmail.com</ser:emailID>
+         </ser:remitterContact>
+         <ser:remitterIdentities><!--0 to 4 repetitions:-->
+            <ser:identity>
+               <ser:idType>PAN Card</ser:idType>
+               <ser:idNumber>123409</ser:idNumber>
+               <!--Optional:-->
+               <ser:idCountry>IN</ser:idCountry>
+               <!--Optional:-->
+               <ser:issueDate>2016-09-09</ser:issueDate>
+               <!--Optional:-->
+               <ser:expiryDate>2018-09-09</ser:expiryDate>
+            </ser:identity>
+         </ser:remitterIdentities>
+         <ser:beneficiaryType>I</ser:beneficiaryType>
+         <ser:beneficiaryName>
+            <ser:fullName>DITTO</ser:fullName>
+         </ser:beneficiaryName>
+         <!--Optional:-->
+         <ser:beneficiaryAddress>
+            <ser:address1>addr1</ser:address1>
+            <!--Optional:-->
+            <ser:address2>addr2</ser:address2>
+            <!--Optional:-->
+            <ser:address3>addr3</ser:address3>
+            <!--Optional:-->
+            <ser:postalCode>222001</ser:postalCode>
+            <!--Optional:-->
+            <ser:city>Mumbai</ser:city>
+            <!--Optional:-->
+            <ser:stateOrProvince>Maharstar</ser:stateOrProvince>
+            <!--Optional:-->
+            <ser:country>IN</ser:country>
+         </ser:beneficiaryAddress>
+         <ser:beneficiaryContact>
+            <!--Optional:-->
+            <ser:mobileNo>8976613173</ser:mobileNo>
+            <!--Optional:-->
+            <ser:emailID>bene.a@gmail.com</ser:emailID>
+         </ser:beneficiaryContact>
+         <ser:beneficiaryIdentities><!--0 to 4 repetitions:-->
+ 
+         </ser:beneficiaryIdentities>
+         <ser:beneficiaryAccountNo>EE91TCC</ser:beneficiaryAccountNo>
+         <ser:beneficiaryIFSC>HDFC0123456</ser:beneficiaryIFSC>
+         <ser:transferType>IMPS</ser:transferType>
+         <ser:transferCurrencyCode>INR</ser:transferCurrencyCode>
+         <ser:transferAmount>200</ser:transferAmount>
+         <ser:remitterToBeneficiaryInfo>DITTO</ser:remitterToBeneficiaryInfo>
+         <ser:purposeCode>PC10</ser:purposeCode>
       </ser:startRemit>
    </soap:Body>
 </soap:Envelope>]]></con:request><con:credentials><con:username>guest</con:username><con:password>qg123$#</con:password><con:selectedAuthProfile>Basic</con:selectedAuthProfile><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:authType>Global HTTP Settings</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.quantiguous.com/services/InwardRemittanceByPartnerService2/startRemitRequest"/><con:wsrmConfig version="1.2"/></con:call></con:operation></con:interface><con:requirements/><con:properties/><con:wssContainer/><con:databaseConnectionContainer/><con:oAuth2ProfileContainer/><con:reporting><con:xmlTemplates/><con:parameters/></con:reporting><con:sensitiveInformation/></con:soapui-project>
