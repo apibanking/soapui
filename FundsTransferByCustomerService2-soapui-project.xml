@@ -1151,18 +1151,18 @@ In case of NA the reason for the rejection will be available in subStatusCode wh
          <ser:AccountNumber>000190600002003</ser:AccountNumber>
       </ser:getBalance>
    </soap:Body>
-</soap:Envelope>]]></con:request><con:credentials><con:username>guest</con:username><con:password>qg123$#</con:password><con:selectedAuthProfile>Basic</con:selectedAuthProfile><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:authType>Global HTTP Settings</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.quantiguous.com/services/fundsTransferByCustomerService2/getBalanceRequest"/><con:wsrmConfig version="1.2"/></con:call></con:operation><con:operation id="9f82ff7e-3033-4798-b792-45f9584a2dad" isOneWay="false" action="http://www.quantiguous.com/services/getStatus" name="getStatus" bindingOperationName="getStatus" type="Request-Response" outputName="getStatusResponse" inputName="getStatusRequest" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="cba72961-4a38-4f0e-b9ff-b26228b060f2" name="Request 1"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>/fundsTransferByCustomerService2</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:ser="http://www.quantiguous.com/services">
+</soap:Envelope>]]></con:request><con:credentials><con:username>guest</con:username><con:password>qg123$#</con:password><con:selectedAuthProfile>Basic</con:selectedAuthProfile><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:authType>Global HTTP Settings</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.quantiguous.com/services/fundsTransferByCustomerService2/getBalanceRequest"/><con:wsrmConfig version="1.2"/></con:call></con:operation><con:operation id="9f82ff7e-3033-4798-b792-45f9584a2dad" isOneWay="false" action="http://www.quantiguous.com/services/getStatus" name="getStatus" bindingOperationName="getStatus" type="Request-Response" outputName="getStatusResponse" inputName="getStatusRequest" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="cba72961-4a38-4f0e-b9ff-b26228b060f2" name="Request 1"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>https://apidemo.quantiguous.com/fundsTransferByCustomerService2</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:ser="http://www.quantiguous.com/services">
    <soap:Header/>
    <soap:Body>
       <ser:getStatus>
          <ser:version>1</ser:version>
          
          
-         <ser:customerID>2424</ser:customerID>
-         <ser:requestReferenceNo>FTIMPS</ser:requestReferenceNo>
+         <ser:customerID>1</ser:customerID>
+         <ser:requestReferenceNo>J12123</ser:requestReferenceNo>
       </ser:getStatus>
    </soap:Body>
-</soap:Envelope>]]></con:request><con:credentials><con:username>guest</con:username><con:password>qg123$#</con:password><con:selectedAuthProfile>Basic</con:selectedAuthProfile><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:authType>Global HTTP Settings</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.quantiguous.com/services/fundsTransferByCustomerService2/getStatusRequest"/><con:wsrmConfig version="1.2"/></con:call></con:operation><con:operation id="a6643482-871b-44f9-b1eb-1b3333d705ad" isOneWay="false" action="http://www.quantiguous.com/services/payInvoice" name="payInvoice" bindingOperationName="payInvoice" type="Request-Response" outputName="payInvoiceResponse" inputName="payInvoiceRequest" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/></con:operation><con:operation id="182263a1-ad48-4de2-aaff-46b3eb55786c" isOneWay="false" action="http://www.quantiguous.com/services/transfer" name="transfer" bindingOperationName="transfer" type="Request-Response" outputName="transferResponse" inputName="transferRequest" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="e0952311-d4ce-40a9-a498-56525671f6bd" name="ditto - RTGS - success"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>/fundsTransferByCustomerService2</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:NS1="http://www.quantiguous.com/services">
+</soap:Envelope>]]></con:request><con:credentials><con:username>guest</con:username><con:password>qg123$#</con:password><con:selectedAuthProfile>Basic</con:selectedAuthProfile><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:authType>Global HTTP Settings</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.quantiguous.com/services/fundsTransferByCustomerService2/getStatusRequest"/><con:wsrmConfig version="1.2"/></con:call></con:operation><con:operation id="a6643482-871b-44f9-b1eb-1b3333d705ad" isOneWay="false" action="http://www.quantiguous.com/services/payInvoice" name="payInvoice" bindingOperationName="payInvoice" type="Request-Response" outputName="payInvoiceResponse" inputName="payInvoiceRequest" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/></con:operation><con:operation id="182263a1-ad48-4de2-aaff-46b3eb55786c" isOneWay="false" action="http://www.quantiguous.com/services/transfer" name="transfer" bindingOperationName="transfer" type="Request-Response" outputName="transferResponse" inputName="transferRequest" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="e0952311-d4ce-40a9-a498-56525671f6bd" name="ditto - RTGS - success"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>https://apidemo.quantiguous.com/fundsTransferByCustomerService2</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:NS1="http://www.quantiguous.com/services">
    <soap:Header/>
    <soap:Body>
       <NS1:transfer>
@@ -1190,7 +1190,7 @@ In case of NA the reason for the rejection will be available in subStatusCode wh
          <NS1:remitterToBeneficiaryInfo>DITTO</NS1:remitterToBeneficiaryInfo>
       </NS1:transfer>
    </soap:Body>
-</soap:Envelope>]]></con:request><con:credentials><con:username>guest</con:username><con:password>qg123$#</con:password><con:selectedAuthProfile>Basic</con:selectedAuthProfile><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:authType>Global HTTP Settings</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.quantiguous.com/services/fundsTransferByCustomerService2/transferRequest"/><con:wsrmConfig version="1.2"/></con:call><con:call id="cf3fc298-6e89-47e7-90ab-2924d705a7ad" name="ditto - IMPS"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>/fundsTransferByCustomerService2</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:NS1="http://www.quantiguous.com/services">
+</soap:Envelope>]]></con:request><con:credentials><con:username>guest</con:username><con:password>qg123$#</con:password><con:selectedAuthProfile>Basic</con:selectedAuthProfile><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:authType>Global HTTP Settings</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.quantiguous.com/services/fundsTransferByCustomerService2/transferRequest"/><con:wsrmConfig version="1.2"/></con:call><con:call id="cf3fc298-6e89-47e7-90ab-2924d705a7ad" name="ditto - IMPS"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>https://apidemo.quantiguous.com/fundsTransferByCustomerService2</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:NS1="http://www.quantiguous.com/services">
    <soap:Header/>
    <soap:Body>
       <NS1:transfer>
@@ -1218,7 +1218,7 @@ In case of NA the reason for the rejection will be available in subStatusCode wh
          <NS1:remitterToBeneficiaryInfo>DITTO</NS1:remitterToBeneficiaryInfo>
       </NS1:transfer>
    </soap:Body>
-</soap:Envelope>]]></con:request><con:credentials><con:username>guest</con:username><con:password>qg123$#</con:password><con:selectedAuthProfile>Basic</con:selectedAuthProfile><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:authType>Global HTTP Settings</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.quantiguous.com/services/fundsTransferByCustomerService2/transferRequest"/><con:wsrmConfig version="1.2"/></con:call><con:call id="53ed1e7b-73fc-4464-a953-f5eb50a9492a" name="ditto - NEFT"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>/fundsTransferByCustomerService2</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:NS1="http://www.quantiguous.com/services">
+</soap:Envelope>]]></con:request><con:credentials><con:username>guest</con:username><con:password>qg123$#</con:password><con:selectedAuthProfile>Basic</con:selectedAuthProfile><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:authType>Global HTTP Settings</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.quantiguous.com/services/fundsTransferByCustomerService2/transferRequest"/><con:wsrmConfig version="1.2"/></con:call><con:call id="53ed1e7b-73fc-4464-a953-f5eb50a9492a" name="ditto - NEFT"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>https://apidemo.quantiguous.com/fundsTransferByCustomerService2</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:NS1="http://www.quantiguous.com/services">
    <soap:Header/>
    <soap:Body>
       <NS1:transfer>
@@ -1246,7 +1246,7 @@ In case of NA the reason for the rejection will be available in subStatusCode wh
          <NS1:remitterToBeneficiaryInfo>DITTO</NS1:remitterToBeneficiaryInfo>
       </NS1:transfer>
    </soap:Body>
-</soap:Envelope>]]></con:request><con:credentials><con:username>guest</con:username><con:password>qg123$#</con:password><con:selectedAuthProfile>Basic</con:selectedAuthProfile><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:authType>Global HTTP Settings</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.quantiguous.com/services/fundsTransferByCustomerService2/transferRequest"/><con:wsrmConfig version="1.2"/></con:call><con:call id="a419c088-ad37-49f5-9d23-18489351a4db" name="bank - success case(NEFT)"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>/fundsTransferByCustomerService2</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:ser="http://www.quantiguous.com/services">
+</soap:Envelope>]]></con:request><con:credentials><con:username>guest</con:username><con:password>qg123$#</con:password><con:selectedAuthProfile>Basic</con:selectedAuthProfile><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:authType>Global HTTP Settings</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.quantiguous.com/services/fundsTransferByCustomerService2/transferRequest"/><con:wsrmConfig version="1.2"/></con:call><con:call id="a419c088-ad37-49f5-9d23-18489351a4db" name="bank - success case(NEFT)"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>https://apidemo.quantiguous.com/fundsTransferByCustomerService2</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:ser="http://www.quantiguous.com/services">
    <soap:Header/>
    <soap:Body>
       <NS1:transfer xmlns:NS1="http://www.quantiguous.com/services">
@@ -1274,7 +1274,7 @@ In case of NA the reason for the rejection will be available in subStatusCode wh
          <NS1:remitterToBeneficiaryInfo>NEFTTXN</NS1:remitterToBeneficiaryInfo>
       </NS1:transfer>
    </soap:Body>
-</soap:Envelope>]]></con:request><con:credentials><con:username>guest</con:username><con:password>qg123$#</con:password><con:selectedAuthProfile>Basic</con:selectedAuthProfile><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:authType>Global HTTP Settings</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.quantiguous.com/services/fundsTransferByCustomerService2/transferRequest"/><con:wsrmConfig version="1.2"/></con:call><con:call id="a5720a89-17bb-49eb-bd8d-add341ec0b4c" name="ditto Timedout(success) - NEFT"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>/fundsTransferByCustomerService2</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:NS1="http://www.quantiguous.com/services">
+</soap:Envelope>]]></con:request><con:credentials><con:username>guest</con:username><con:password>qg123$#</con:password><con:selectedAuthProfile>Basic</con:selectedAuthProfile><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:authType>Global HTTP Settings</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.quantiguous.com/services/fundsTransferByCustomerService2/transferRequest"/><con:wsrmConfig version="1.2"/></con:call><con:call id="a5720a89-17bb-49eb-bd8d-add341ec0b4c" name="ditto Timedout(success) - NEFT"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>https://apidemo.quantiguous.com/fundsTransferByCustomerService2</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:NS1="http://www.quantiguous.com/services">
    <soap:Header/>
    <soap:Body>
       <NS1:transfer>
@@ -1302,7 +1302,7 @@ In case of NA the reason for the rejection will be available in subStatusCode wh
          <NS1:remitterToBeneficiaryInfo>DITTO</NS1:remitterToBeneficiaryInfo>
       </NS1:transfer>
    </soap:Body>
-</soap:Envelope>]]></con:request><con:credentials><con:username>guest</con:username><con:password>qg123$#</con:password><con:selectedAuthProfile>Basic</con:selectedAuthProfile><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:authType>Global HTTP Settings</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.quantiguous.com/services/fundsTransferByCustomerService2/transferRequest"/><con:wsrmConfig version="1.2"/></con:call><con:call id="05f9ef43-f7f0-42cb-9b26-16da320dc04f" name="ditto - RTGS - returned from bene"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>/fundsTransferByCustomerService2</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:NS1="http://www.quantiguous.com/services">
+</soap:Envelope>]]></con:request><con:credentials><con:username>guest</con:username><con:password>qg123$#</con:password><con:selectedAuthProfile>Basic</con:selectedAuthProfile><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:authType>Global HTTP Settings</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.quantiguous.com/services/fundsTransferByCustomerService2/transferRequest"/><con:wsrmConfig version="1.2"/></con:call><con:call id="05f9ef43-f7f0-42cb-9b26-16da320dc04f" name="ditto - RTGS - returned from bene"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>https://apidemo.quantiguous.com/fundsTransferByCustomerService2</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:NS1="http://www.quantiguous.com/services">
    <soap:Header/>
    <soap:Body>
       <NS1:transfer>
@@ -1330,12 +1330,12 @@ In case of NA the reason for the rejection will be available in subStatusCode wh
          <NS1:remitterToBeneficiaryInfo>DITTO</NS1:remitterToBeneficiaryInfo>
       </NS1:transfer>
    </soap:Body>
-</soap:Envelope>]]></con:request><con:credentials><con:username>guest</con:username><con:password>qg123$#</con:password><con:selectedAuthProfile>Basic</con:selectedAuthProfile><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:authType>Global HTTP Settings</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.quantiguous.com/services/fundsTransferByCustomerService2/transferRequest"/><con:wsrmConfig version="1.2"/></con:call><con:call id="935ebd11-1c48-402a-b958-05e4a898946d" name="apid"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>https://apidemo.quantiguous.com/fundsTransferByCustomerService2</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:ser="http://www.quantiguous.com/services" xmlns:NS1="http://www.quantiguous.com/services">
+</soap:Envelope>]]></con:request><con:credentials><con:username>guest</con:username><con:password>qg123$#</con:password><con:selectedAuthProfile>Basic</con:selectedAuthProfile><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:authType>Global HTTP Settings</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.quantiguous.com/services/fundsTransferByCustomerService2/transferRequest"/><con:wsrmConfig version="1.2"/></con:call><con:call id="935ebd11-1c48-402a-b958-05e4a898946d" name="apid - ditto- neft - completed"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>https://apidemo.quantiguous.com/fundsTransferByCustomerService2</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:ser="http://www.quantiguous.com/services" xmlns:NS1="http://www.quantiguous.com/services">
    <soap:Header/>
    <soap:Body>
       <ser:transfer>
          <ser:version>1</ser:version>
-         <ser:uniqueRequestNo>transfer012</ser:uniqueRequestNo>
+         <ser:uniqueRequestNo>transfer0171</ser:uniqueRequestNo>
          <!--Optional:-->
          <ser:appID>QG0912</ser:appID>
          <!--Optional:-->
@@ -1347,7 +1347,7 @@ In case of NA the reason for the rejection will be available in subStatusCode wh
       
             <ser:beneficiaryDetail>
                <ser:beneficiaryName>
-                  <ser:fullName>Quantiguous Solutions</ser:fullName>
+                  <ser:fullName>DITTO</ser:fullName>
                </ser:beneficiaryName>
                <!--Optional:-->
                <ser:beneficiaryAddress>
@@ -1358,23 +1358,257 @@ In case of NA the reason for the rejection will be available in subStatusCode wh
                <ser:beneficiaryContact><!--Optional:-->
               
                </ser:beneficiaryContact>
-               <ser:beneficiaryAccountNo>991990600011174</ser:beneficiaryAccountNo>
+               <ser:beneficiaryAccountNo>751990600011174</ser:beneficiaryAccountNo>
+               <ser:beneficiaryIFSC>HDFC0123456</ser:beneficiaryIFSC>
+               <!--Optional:-->
+            </ser:beneficiaryDetail>
+         </ser:beneficiary>
+         <ser:transferType>NEFT</ser:transferType>
+         <ser:transferCurrencyCode>INR</ser:transferCurrencyCode>
+         <ser:transferAmount>300</ser:transferAmount>
+         <ser:remitterToBeneficiaryInfo>DITTO</ser:remitterToBeneficiaryInfo>
+      </ser:transfer>
+   </soap:Body>
+</soap:Envelope>]]></con:request><con:credentials><con:username>guest</con:username><con:password>qg123$#</con:password><con:selectedAuthProfile>Basic</con:selectedAuthProfile><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:authType>Global HTTP Settings</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.quantiguous.com/services/fundsTransferByCustomerService2/transferRequest"/><con:wsrmConfig version="1.2"/></con:call><con:call id="0f47944f-af0a-4758-ae09-9cc18b97a673" name="apid - ditto- rtgs - completed"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>https://apidemo.quantiguous.com/fundsTransferByCustomerService2</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:ser="http://www.quantiguous.com/services" xmlns:NS1="http://www.quantiguous.com/services">
+   <soap:Header/>
+   <soap:Body>
+      <ser:transfer>
+         <ser:version>1</ser:version>
+         <ser:uniqueRequestNo>transfer3018</ser:uniqueRequestNo>
+         <!--Optional:-->
+         <ser:appID>QG0912</ser:appID>
+         <!--Optional:-->
+         <ser:purposeCode>REFUND</ser:purposeCode>
+         <ser:customerID>1</ser:customerID>
+         <ser:debitAccountNo>000190600002003</ser:debitAccountNo>
+         <ser:beneficiary>
+            <!--You have a CHOICE of the next 2 items at this level-->
+      
+            <ser:beneficiaryDetail>
+               <ser:beneficiaryName>
+                  <ser:fullName>DITTO</ser:fullName>
+               </ser:beneficiaryName>
+               <!--Optional:-->
+               <ser:beneficiaryAddress>
+                  <ser:address1>MALAD WEST</ser:address1>
+                  <!--Optional:-->
+                 
+               </ser:beneficiaryAddress>
+               <ser:beneficiaryContact><!--Optional:-->
+              
+               </ser:beneficiaryContact>
+               <ser:beneficiaryAccountNo>751990600011174</ser:beneficiaryAccountNo>
                <ser:beneficiaryIFSC>HDFC0123456</ser:beneficiaryIFSC>
                <!--Optional:-->
             </ser:beneficiaryDetail>
          </ser:beneficiary>
          <ser:transferType>RTGS</ser:transferType>
          <ser:transferCurrencyCode>INR</ser:transferCurrencyCode>
-         <ser:transferAmount>300000</ser:transferAmount>
+         <ser:transferAmount>300222</ser:transferAmount>
          <ser:remitterToBeneficiaryInfo>DITTO</ser:remitterToBeneficiaryInfo>
       </ser:transfer>
    </soap:Body>
-</soap:Envelope>]]></con:request><con:credentials><con:username>guest</con:username><con:password>qg123$#</con:password><con:selectedAuthProfile>Basic</con:selectedAuthProfile><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:authType>Global HTTP Settings</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.quantiguous.com/services/fundsTransferByCustomerService2/transferRequest"/><con:wsrmConfig version="1.2"/></con:call></con:operation><con:operation id="7435e59e-3db9-4f55-a4ff-715ad1a36d6a" isOneWay="false" action="http://www.quantiguous.com/services/startTransfer" name="startTransfer" bindingOperationName="startTransfer" type="Request-Response" outputName="startTransferResponse" inputName="startTransferRequest" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="a5557cf8-1d0c-4647-8f2d-129efafa1de4" name="apid"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>https://apidemo.quantiguous.com/fundsTransferByCustomerService2</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:NS1="http://www.quantiguous.com/services">
+</soap:Envelope>]]></con:request><con:credentials><con:username>guest</con:username><con:password>qg123$#</con:password><con:selectedAuthProfile>Basic</con:selectedAuthProfile><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:authType>Global HTTP Settings</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.quantiguous.com/services/fundsTransferByCustomerService2/transferRequest"/><con:wsrmConfig version="1.2"/></con:call><con:call id="e984b7ef-17ae-4276-9c1d-30a267c26b6e" name="apid - ditto- rtgs - returned_from_beneficiary"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>https://apidemo.quantiguous.com/fundsTransferByCustomerService2</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:ser="http://www.quantiguous.com/services" xmlns:NS1="http://www.quantiguous.com/services">
+   <soap:Header/>
+   <soap:Body>
+      <ser:transfer>
+         <ser:version>1</ser:version>
+         <ser:uniqueRequestNo>transfer5018</ser:uniqueRequestNo>
+         <!--Optional:-->
+         <ser:appID>QG0912</ser:appID>
+         <!--Optional:-->
+         <ser:purposeCode>REFUND</ser:purposeCode>
+         <ser:customerID>1</ser:customerID>
+         <ser:debitAccountNo>000190600002003</ser:debitAccountNo>
+         <ser:beneficiary>
+            <!--You have a CHOICE of the next 2 items at this level-->
+      
+            <ser:beneficiaryDetail>
+               <ser:beneficiaryName>
+                  <ser:fullName>DITTO</ser:fullName>
+               </ser:beneficiaryName>
+               <!--Optional:-->
+               <ser:beneficiaryAddress>
+                  <ser:address1>MALAD WEST</ser:address1>
+                  <!--Optional:-->
+                 
+               </ser:beneficiaryAddress>
+               <ser:beneficiaryContact><!--Optional:-->
+              
+               </ser:beneficiaryContact>
+               <ser:beneficiaryAccountNo>301990600011174</ser:beneficiaryAccountNo>
+               <ser:beneficiaryIFSC>HDFC0123456</ser:beneficiaryIFSC>
+               <!--Optional:-->
+            </ser:beneficiaryDetail>
+         </ser:beneficiary>
+         <ser:transferType>RTGS</ser:transferType>
+         <ser:transferCurrencyCode>INR</ser:transferCurrencyCode>
+         <ser:transferAmount>300222</ser:transferAmount>
+         <ser:remitterToBeneficiaryInfo>DITTO</ser:remitterToBeneficiaryInfo>
+      </ser:transfer>
+   </soap:Body>
+</soap:Envelope>]]></con:request><con:credentials><con:username>guest</con:username><con:password>qg123$#</con:password><con:selectedAuthProfile>Basic</con:selectedAuthProfile><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:authType>Global HTTP Settings</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.quantiguous.com/services/fundsTransferByCustomerService2/transferRequest"/><con:wsrmConfig version="1.2"/></con:call><con:call id="e97ddad1-7053-456d-8e62-1f7e1518ec64" name="apid - ditto- neft - returned_from_beneficiary"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>https://apidemo.quantiguous.com/fundsTransferByCustomerService2</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:ser="http://www.quantiguous.com/services" xmlns:NS1="http://www.quantiguous.com/services">
+   <soap:Header/>
+   <soap:Body>
+      <ser:transfer>
+         <ser:version>1</ser:version>
+         <ser:uniqueRequestNo>transfer2017</ser:uniqueRequestNo>
+         <!--Optional:-->
+         <ser:appID>QG0912</ser:appID>
+         <!--Optional:-->
+         <ser:purposeCode>REFUND</ser:purposeCode>
+         <ser:customerID>1</ser:customerID>
+         <ser:debitAccountNo>000190600002003</ser:debitAccountNo>
+         <ser:beneficiary>
+            <!--You have a CHOICE of the next 2 items at this level-->
+      
+            <ser:beneficiaryDetail>
+               <ser:beneficiaryName>
+                  <ser:fullName>DITTO</ser:fullName>
+               </ser:beneficiaryName>
+               <!--Optional:-->
+               <ser:beneficiaryAddress>
+                  <ser:address1>MALAD WEST</ser:address1>
+                  <!--Optional:-->
+                 
+               </ser:beneficiaryAddress>
+               <ser:beneficiaryContact><!--Optional:-->
+              
+               </ser:beneficiaryContact>
+               <ser:beneficiaryAccountNo>301990600011174</ser:beneficiaryAccountNo>
+               <ser:beneficiaryIFSC>HDFC0123456</ser:beneficiaryIFSC>
+               <!--Optional:-->
+            </ser:beneficiaryDetail>
+         </ser:beneficiary>
+         <ser:transferType>NEFT</ser:transferType>
+         <ser:transferCurrencyCode>INR</ser:transferCurrencyCode>
+         <ser:transferAmount>300</ser:transferAmount>
+         <ser:remitterToBeneficiaryInfo>DITTO</ser:remitterToBeneficiaryInfo>
+      </ser:transfer>
+   </soap:Body>
+</soap:Envelope>]]></con:request><con:credentials><con:username>guest</con:username><con:password>qg123$#</con:password><con:selectedAuthProfile>Basic</con:selectedAuthProfile><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:authType>Global HTTP Settings</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.quantiguous.com/services/fundsTransferByCustomerService2/transferRequest"/><con:wsrmConfig version="1.2"/></con:call><con:call id="a61ac8e8-e274-4ccf-b3be-2115077891e7" name="apid - ditto- ft - completed"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>https://apidemo.quantiguous.com/fundsTransferByCustomerService2</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:ser="http://www.quantiguous.com/services" xmlns:NS1="http://www.quantiguous.com/services">
+   <soap:Header/>
+   <soap:Body>
+      <ser:transfer>
+         <ser:version>1</ser:version>
+         <ser:uniqueRequestNo>transfer1017</ser:uniqueRequestNo>
+         <!--Optional:-->
+         <ser:appID>QG0912</ser:appID>
+         <!--Optional:-->
+         <ser:purposeCode>REFUND</ser:purposeCode>
+         <ser:customerID>1</ser:customerID>
+         <ser:debitAccountNo>000190600002003</ser:debitAccountNo>
+         <ser:beneficiary>
+            <!--You have a CHOICE of the next 2 items at this level-->
+      
+            <ser:beneficiaryDetail>
+               <ser:beneficiaryName>
+                  <ser:fullName>DITTO</ser:fullName>
+               </ser:beneficiaryName>
+               <!--Optional:-->
+               <ser:beneficiaryAddress>
+                  <ser:address1>MALAD WEST</ser:address1>
+                  <!--Optional:-->
+                 
+               </ser:beneficiaryAddress>
+               <ser:beneficiaryContact><!--Optional:-->
+              
+               </ser:beneficiaryContact>
+               <ser:beneficiaryAccountNo>751990600011174</ser:beneficiaryAccountNo>
+               <ser:beneficiaryIFSC>YESB0123456</ser:beneficiaryIFSC>
+               <!--Optional:-->
+            </ser:beneficiaryDetail>
+         </ser:beneficiary>
+         <ser:transferType>FT</ser:transferType>
+         <ser:transferCurrencyCode>INR</ser:transferCurrencyCode>
+         <ser:transferAmount>300</ser:transferAmount>
+         <ser:remitterToBeneficiaryInfo>DITTO</ser:remitterToBeneficiaryInfo>
+      </ser:transfer>
+   </soap:Body>
+</soap:Envelope>]]></con:request><con:credentials><con:username>guest</con:username><con:password>qg123$#</con:password><con:selectedAuthProfile>Basic</con:selectedAuthProfile><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:authType>Global HTTP Settings</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.quantiguous.com/services/fundsTransferByCustomerService2/transferRequest"/><con:wsrmConfig version="1.2"/></con:call><con:call id="abe8e5fc-0aa5-4353-ba3f-8ed13733fa04" name="apid - ditto- imps - completed"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>https://apidemo.quantiguous.com/fundsTransferByCustomerService2</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:ser="http://www.quantiguous.com/services" xmlns:NS1="http://www.quantiguous.com/services">
+   <soap:Header/>
+   <soap:Body>
+      <ser:transfer>
+         <ser:version>1</ser:version>
+         <ser:uniqueRequestNo>transfer018</ser:uniqueRequestNo>
+         <!--Optional:-->
+         <ser:appID>QG0912</ser:appID>
+         <!--Optional:-->
+         <ser:purposeCode>REFUND</ser:purposeCode>
+         <ser:customerID>1</ser:customerID>
+         <ser:debitAccountNo>000190600002003</ser:debitAccountNo>
+         <ser:beneficiary>
+            <!--You have a CHOICE of the next 2 items at this level-->
+      
+            <ser:beneficiaryDetail>
+               <ser:beneficiaryName>
+                  <ser:fullName>DITTO</ser:fullName>
+               </ser:beneficiaryName>
+               <!--Optional:-->
+               <ser:beneficiaryAddress>
+                  <ser:address1>MALAD WEST</ser:address1>
+                  <!--Optional:-->
+                 
+               </ser:beneficiaryAddress>
+               <ser:beneficiaryContact><!--Optional:-->
+              
+               </ser:beneficiaryContact>
+               <ser:beneficiaryAccountNo>EE00</ser:beneficiaryAccountNo>
+               <ser:beneficiaryIFSC>HDFC0123456</ser:beneficiaryIFSC>
+               <!--Optional:-->
+            </ser:beneficiaryDetail>
+         </ser:beneficiary>
+         <ser:transferType>IMPS</ser:transferType>
+         <ser:transferCurrencyCode>INR</ser:transferCurrencyCode>
+         <ser:transferAmount>300</ser:transferAmount>
+         <ser:remitterToBeneficiaryInfo>DITTO</ser:remitterToBeneficiaryInfo>
+      </ser:transfer>
+   </soap:Body>
+</soap:Envelope>]]></con:request><con:credentials><con:username>guest</con:username><con:password>qg123$#</con:password><con:selectedAuthProfile>Basic</con:selectedAuthProfile><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:authType>Global HTTP Settings</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.quantiguous.com/services/fundsTransferByCustomerService2/transferRequest"/><con:wsrmConfig version="1.2"/></con:call><con:call id="b5609f36-22f2-4fa6-b12d-d6fb8d5a1998" name="apid - ditto- neft - failed"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>https://apidemo.quantiguous.com/fundsTransferByCustomerService2</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:ser="http://www.quantiguous.com/services" xmlns:NS1="http://www.quantiguous.com/services">
+   <soap:Header/>
+   <soap:Body>
+      <ser:transfer>
+         <ser:version>1</ser:version>
+         <ser:uniqueRequestNo>transfer60171</ser:uniqueRequestNo>
+         <!--Optional:-->
+         <ser:appID>QG0912</ser:appID>
+         <!--Optional:-->
+         <ser:purposeCode>REFUND</ser:purposeCode>
+         <ser:customerID>1</ser:customerID>
+         <ser:debitAccountNo>000190600002003</ser:debitAccountNo>
+         <ser:beneficiary>
+            <!--You have a CHOICE of the next 2 items at this level-->
+      
+            <ser:beneficiaryDetail>
+               <ser:beneficiaryName>
+                  <ser:fullName>DITTO</ser:fullName>
+               </ser:beneficiaryName>
+               <!--Optional:-->
+               <ser:beneficiaryAddress>
+                  <ser:address1>MALAD WEST</ser:address1>
+                  <!--Optional:-->
+                 
+               </ser:beneficiaryAddress>
+               <ser:beneficiaryContact><!--Optional:-->
+              
+               </ser:beneficiaryContact>
+               <ser:beneficiaryAccountNo>701990600011174</ser:beneficiaryAccountNo>
+               <ser:beneficiaryIFSC>HDFC0123456</ser:beneficiaryIFSC>
+               <!--Optional:-->
+            </ser:beneficiaryDetail>
+         </ser:beneficiary>
+         <ser:transferType>NEFT</ser:transferType>
+         <ser:transferCurrencyCode>INR</ser:transferCurrencyCode>
+         <ser:transferAmount>300</ser:transferAmount>
+         <ser:remitterToBeneficiaryInfo>DITTO</ser:remitterToBeneficiaryInfo>
+      </ser:transfer>
+   </soap:Body>
+</soap:Envelope>]]></con:request><con:credentials><con:username>guest</con:username><con:password>qg123$#</con:password><con:selectedAuthProfile>Basic</con:selectedAuthProfile><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:authType>Global HTTP Settings</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.quantiguous.com/services/fundsTransferByCustomerService2/transferRequest"/><con:wsrmConfig version="1.2"/></con:call></con:operation><con:operation id="7435e59e-3db9-4f55-a4ff-715ad1a36d6a" isOneWay="false" action="http://www.quantiguous.com/services/startTransfer" name="startTransfer" bindingOperationName="startTransfer" type="Request-Response" outputName="startTransferResponse" inputName="startTransferRequest" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="a5557cf8-1d0c-4647-8f2d-129efafa1de4" name="apid - ditto - ANY - RTGS - completed"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>https://apidemo.quantiguous.com/fundsTransferByCustomerService2</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:NS1="http://www.quantiguous.com/services">
    <soap:Header/>
    <soap:Body>
       <NS1:startTransfer>
          <NS1:version>1</NS1:version>
-         <NS1:uniqueRequestNo>12121</NS1:uniqueRequestNo>
+         <NS1:uniqueRequestNo>D12122</NS1:uniqueRequestNo>
          <NS1:appID>QG0912</NS1:appID>
          <!--Optional:-->
          <NS1:purposeCode>REFUND</NS1:purposeCode>
@@ -1383,14 +1617,344 @@ In case of NA the reason for the rejection will be available in subStatusCode wh
          <NS1:beneficiary>
             <NS1:beneficiaryDetail>
                <NS1:beneficiaryName>
-                  <NS1:fullName>Quantiguous Solutions</NS1:fullName>
+                  <NS1:fullName>DITTO</NS1:fullName>
                </NS1:beneficiaryName>
                <NS1:beneficiaryAddress>
                   <NS1:address1>MALAD WEST</NS1:address1>
                </NS1:beneficiaryAddress>
                <NS1:beneficiaryContact/>
-               <NS1:beneficiaryAccountNo>991990600011174</NS1:beneficiaryAccountNo>
+               <NS1:beneficiaryAccountNo>751990600011174</NS1:beneficiaryAccountNo>
                <NS1:beneficiaryIFSC>ABCD0123456</NS1:beneficiaryIFSC>
+            </NS1:beneficiaryDetail>
+         </NS1:beneficiary>
+         <NS1:transferType>ANY</NS1:transferType>
+         <NS1:transferCurrencyCode>INR</NS1:transferCurrencyCode>
+         <NS1:transferAmount>300000</NS1:transferAmount>
+         <NS1:remitterToBeneficiaryInfo>DITTO</NS1:remitterToBeneficiaryInfo>
+      </NS1:startTransfer>
+   </soap:Body>
+</soap:Envelope>]]></con:request><con:credentials><con:username>guest</con:username><con:password>qg123$#</con:password><con:selectedAuthProfile>Basic</con:selectedAuthProfile><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:authType>Global HTTP Settings</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.quantiguous.com/services/fundsTransferByCustomerService2/startTransferRequest"/><con:wsrmConfig version="1.2"/></con:call><con:call id="e458ec04-81b7-436d-a949-067ec3042429" name="apid - ditto - RTGS - completed"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>https://apidemo.quantiguous.com/fundsTransferByCustomerService2</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:NS1="http://www.quantiguous.com/services">
+   <soap:Header/>
+   <soap:Body>
+      <NS1:startTransfer>
+         <NS1:version>1</NS1:version>
+         <NS1:uniqueRequestNo>I12122</NS1:uniqueRequestNo>
+         <NS1:appID>QG0912</NS1:appID>
+         <!--Optional:-->
+         <NS1:purposeCode>REFUND</NS1:purposeCode>
+         <NS1:customerID>1</NS1:customerID>
+         <NS1:debitAccountNo>000190600002003</NS1:debitAccountNo>
+         <NS1:beneficiary>
+            <NS1:beneficiaryDetail>
+               <NS1:beneficiaryName>
+                  <NS1:fullName>DITTO</NS1:fullName>
+               </NS1:beneficiaryName>
+               <NS1:beneficiaryAddress>
+                  <NS1:address1>MALAD WEST</NS1:address1>
+               </NS1:beneficiaryAddress>
+               <NS1:beneficiaryContact/>
+               <NS1:beneficiaryAccountNo>751990600011174</NS1:beneficiaryAccountNo>
+               <NS1:beneficiaryIFSC>ABCD0123456</NS1:beneficiaryIFSC>
+            </NS1:beneficiaryDetail>
+         </NS1:beneficiary>
+         <NS1:transferType>RTGS</NS1:transferType>
+         <NS1:transferCurrencyCode>INR</NS1:transferCurrencyCode>
+         <NS1:transferAmount>300000</NS1:transferAmount>
+         <NS1:remitterToBeneficiaryInfo>DITTO</NS1:remitterToBeneficiaryInfo>
+      </NS1:startTransfer>
+   </soap:Body>
+</soap:Envelope>]]></con:request><con:credentials><con:username>guest</con:username><con:password>qg123$#</con:password><con:selectedAuthProfile>Basic</con:selectedAuthProfile><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:authType>Global HTTP Settings</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.quantiguous.com/services/fundsTransferByCustomerService2/startTransferRequest"/><con:wsrmConfig version="1.2"/></con:call><con:call id="ab95b03b-5a16-4880-8a52-0b50b1bbdfef" name="apid - ditto - RTGS - failed"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>https://apidemo.quantiguous.com/fundsTransferByCustomerService2</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:NS1="http://www.quantiguous.com/services">
+   <soap:Header/>
+   <soap:Body>
+      <NS1:startTransfer>
+         <NS1:version>1</NS1:version>
+         <NS1:uniqueRequestNo>J12123</NS1:uniqueRequestNo>
+         <NS1:appID>QG0912</NS1:appID>
+         <!--Optional:-->
+         <NS1:purposeCode>REFUND</NS1:purposeCode>
+         <NS1:customerID>1</NS1:customerID>
+         <NS1:debitAccountNo>000190600002003</NS1:debitAccountNo>
+         <NS1:beneficiary>
+            <NS1:beneficiaryDetail>
+               <NS1:beneficiaryName>
+                  <NS1:fullName>DITTO</NS1:fullName>
+               </NS1:beneficiaryName>
+               <NS1:beneficiaryAddress>
+                  <NS1:address1>MALAD WEST</NS1:address1>
+               </NS1:beneficiaryAddress>
+               <NS1:beneficiaryContact/>
+               <NS1:beneficiaryAccountNo>701990600011174</NS1:beneficiaryAccountNo>
+               <NS1:beneficiaryIFSC>ABCD0123456</NS1:beneficiaryIFSC>
+            </NS1:beneficiaryDetail>
+         </NS1:beneficiary>
+         <NS1:transferType>RTGS</NS1:transferType>
+         <NS1:transferCurrencyCode>INR</NS1:transferCurrencyCode>
+         <NS1:transferAmount>300000</NS1:transferAmount>
+         <NS1:remitterToBeneficiaryInfo>DITTO</NS1:remitterToBeneficiaryInfo>
+      </NS1:startTransfer>
+   </soap:Body>
+</soap:Envelope>]]></con:request><con:credentials><con:username>guest</con:username><con:password>qg123$#</con:password><con:selectedAuthProfile>Basic</con:selectedAuthProfile><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:authType>Global HTTP Settings</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.quantiguous.com/services/fundsTransferByCustomerService2/startTransferRequest"/><con:wsrmConfig version="1.2"/></con:call><con:call id="2cde2576-b43d-4c6d-845a-b56564e33cd0" name="apid - ditto - RTGS - sent_to_beneficiary"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>https://apidemo.quantiguous.com/fundsTransferByCustomerService2</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:NS1="http://www.quantiguous.com/services">
+   <soap:Header/>
+   <soap:Body>
+      <NS1:startTransfer>
+         <NS1:version>1</NS1:version>
+         <NS1:uniqueRequestNo>L12123</NS1:uniqueRequestNo>
+         <NS1:appID>QG0912</NS1:appID>
+         <!--Optional:-->
+         <NS1:purposeCode>REFUND</NS1:purposeCode>
+         <NS1:customerID>1</NS1:customerID>
+         <NS1:debitAccountNo>000190600002003</NS1:debitAccountNo>
+         <NS1:beneficiary>
+            <NS1:beneficiaryDetail>
+               <NS1:beneficiaryName>
+                  <NS1:fullName>DITTO</NS1:fullName>
+               </NS1:beneficiaryName>
+               <NS1:beneficiaryAddress>
+                  <NS1:address1>MALAD WEST</NS1:address1>
+               </NS1:beneficiaryAddress>
+               <NS1:beneficiaryContact/>
+               <NS1:beneficiaryAccountNo>551990600011174</NS1:beneficiaryAccountNo>
+               <NS1:beneficiaryIFSC>ABCD0123456</NS1:beneficiaryIFSC>
+            </NS1:beneficiaryDetail>
+         </NS1:beneficiary>
+         <NS1:transferType>RTGS</NS1:transferType>
+         <NS1:transferCurrencyCode>INR</NS1:transferCurrencyCode>
+         <NS1:transferAmount>300000</NS1:transferAmount>
+         <NS1:remitterToBeneficiaryInfo>DITTO</NS1:remitterToBeneficiaryInfo>
+      </NS1:startTransfer>
+   </soap:Body>
+</soap:Envelope>]]></con:request><con:credentials><con:username>guest</con:username><con:password>qg123$#</con:password><con:selectedAuthProfile>Basic</con:selectedAuthProfile><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:authType>Global HTTP Settings</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.quantiguous.com/services/fundsTransferByCustomerService2/startTransferRequest"/><con:wsrmConfig version="1.2"/></con:call><con:call id="8a9a5087-17dd-4027-aeec-aaeceadb50a1" name="apid - ditto - RTGS - returned_from-beneficiary"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>https://apidemo.quantiguous.com/fundsTransferByCustomerService2</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:NS1="http://www.quantiguous.com/services">
+   <soap:Header/>
+   <soap:Body>
+      <NS1:startTransfer>
+         <NS1:version>1</NS1:version>
+         <NS1:uniqueRequestNo>K12122</NS1:uniqueRequestNo>
+         <NS1:appID>QG0912</NS1:appID>
+         <!--Optional:-->
+         <NS1:purposeCode>REFUND</NS1:purposeCode>
+         <NS1:customerID>1</NS1:customerID>
+         <NS1:debitAccountNo>000190600002003</NS1:debitAccountNo>
+         <NS1:beneficiary>
+            <NS1:beneficiaryDetail>
+               <NS1:beneficiaryName>
+                  <NS1:fullName>DITTO</NS1:fullName>
+               </NS1:beneficiaryName>
+               <NS1:beneficiaryAddress>
+                  <NS1:address1>MALAD WEST</NS1:address1>
+               </NS1:beneficiaryAddress>
+               <NS1:beneficiaryContact/>
+               <NS1:beneficiaryAccountNo>301990600011174</NS1:beneficiaryAccountNo>
+               <NS1:beneficiaryIFSC>ABCD0123456</NS1:beneficiaryIFSC>
+            </NS1:beneficiaryDetail>
+         </NS1:beneficiary>
+         <NS1:transferType>RTGS</NS1:transferType>
+         <NS1:transferCurrencyCode>INR</NS1:transferCurrencyCode>
+         <NS1:transferAmount>300000</NS1:transferAmount>
+         <NS1:remitterToBeneficiaryInfo>DITTO</NS1:remitterToBeneficiaryInfo>
+      </NS1:startTransfer>
+   </soap:Body>
+</soap:Envelope>]]></con:request><con:credentials><con:username>guest</con:username><con:password>qg123$#</con:password><con:selectedAuthProfile>Basic</con:selectedAuthProfile><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:authType>Global HTTP Settings</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.quantiguous.com/services/fundsTransferByCustomerService2/startTransferRequest"/><con:wsrmConfig version="1.2"/></con:call><con:call id="3096216f-b504-4c9a-ad8b-cff35542cf55" name="apid - ditto - NEFT - completed"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>https://apidemo.quantiguous.com/fundsTransferByCustomerService2</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:NS1="http://www.quantiguous.com/services">
+   <soap:Header/>
+   <soap:Body>
+      <NS1:startTransfer>
+         <NS1:version>1</NS1:version>
+         <NS1:uniqueRequestNo>E12122</NS1:uniqueRequestNo>
+         <NS1:appID>QG0912</NS1:appID>
+         <!--Optional:-->
+         <NS1:purposeCode>REFUND</NS1:purposeCode>
+         <NS1:customerID>1</NS1:customerID>
+         <NS1:debitAccountNo>000190600002003</NS1:debitAccountNo>
+         <NS1:beneficiary>
+            <NS1:beneficiaryDetail>
+               <NS1:beneficiaryName>
+                  <NS1:fullName>DITTO</NS1:fullName>
+               </NS1:beneficiaryName>
+               <NS1:beneficiaryAddress>
+                  <NS1:address1>MALAD WEST</NS1:address1>
+               </NS1:beneficiaryAddress>
+               <NS1:beneficiaryContact/>
+               <NS1:beneficiaryAccountNo>751990600011174</NS1:beneficiaryAccountNo>
+               <NS1:beneficiaryIFSC>ABCD0123456</NS1:beneficiaryIFSC>
+            </NS1:beneficiaryDetail>
+         </NS1:beneficiary>
+         <NS1:transferType>NEFT</NS1:transferType>
+         <NS1:transferCurrencyCode>INR</NS1:transferCurrencyCode>
+         <NS1:transferAmount>300</NS1:transferAmount>
+         <NS1:remitterToBeneficiaryInfo>DITTO</NS1:remitterToBeneficiaryInfo>
+      </NS1:startTransfer>
+   </soap:Body>
+</soap:Envelope>]]></con:request><con:credentials><con:username>guest</con:username><con:password>qg123$#</con:password><con:selectedAuthProfile>Basic</con:selectedAuthProfile><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:authType>Global HTTP Settings</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.quantiguous.com/services/fundsTransferByCustomerService2/startTransferRequest"/><con:wsrmConfig version="1.2"/></con:call><con:call id="daabad50-a17e-4f0a-8ebd-61634f59b983" name="apid - ditto - NEFT - failed"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>https://apidemo.quantiguous.com/fundsTransferByCustomerService2</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:NS1="http://www.quantiguous.com/services">
+   <soap:Header/>
+   <soap:Body>
+      <NS1:startTransfer>
+         <NS1:version>1</NS1:version>
+         <NS1:uniqueRequestNo>F12122</NS1:uniqueRequestNo>
+         <NS1:appID>QG0912</NS1:appID>
+         <!--Optional:-->
+         <NS1:purposeCode>REFUND</NS1:purposeCode>
+         <NS1:customerID>1</NS1:customerID>
+         <NS1:debitAccountNo>000190600002003</NS1:debitAccountNo>
+         <NS1:beneficiary>
+            <NS1:beneficiaryDetail>
+               <NS1:beneficiaryName>
+                  <NS1:fullName>DITTO</NS1:fullName>
+               </NS1:beneficiaryName>
+               <NS1:beneficiaryAddress>
+                  <NS1:address1>MALAD WEST</NS1:address1>
+               </NS1:beneficiaryAddress>
+               <NS1:beneficiaryContact/>
+               <NS1:beneficiaryAccountNo>701990600011174</NS1:beneficiaryAccountNo>
+               <NS1:beneficiaryIFSC>ABCD0123456</NS1:beneficiaryIFSC>
+            </NS1:beneficiaryDetail>
+         </NS1:beneficiary>
+         <NS1:transferType>NEFT</NS1:transferType>
+         <NS1:transferCurrencyCode>INR</NS1:transferCurrencyCode>
+         <NS1:transferAmount>300</NS1:transferAmount>
+         <NS1:remitterToBeneficiaryInfo>DITTO</NS1:remitterToBeneficiaryInfo>
+      </NS1:startTransfer>
+   </soap:Body>
+</soap:Envelope>]]></con:request><con:credentials><con:username>guest</con:username><con:password>qg123$#</con:password><con:selectedAuthProfile>Basic</con:selectedAuthProfile><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:authType>Global HTTP Settings</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.quantiguous.com/services/fundsTransferByCustomerService2/startTransferRequest"/><con:wsrmConfig version="1.2"/></con:call><con:call id="f4dbeb27-8ffa-4f6d-abfe-8c32f7b1efb6" name="apid - ditto - NEFT - returned_from-beneficiary"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>https://apidemo.quantiguous.com/fundsTransferByCustomerService2</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:NS1="http://www.quantiguous.com/services">
+   <soap:Header/>
+   <soap:Body>
+      <NS1:startTransfer>
+         <NS1:version>1</NS1:version>
+         <NS1:uniqueRequestNo>G12122</NS1:uniqueRequestNo>
+         <NS1:appID>QG0912</NS1:appID>
+         <!--Optional:-->
+         <NS1:purposeCode>REFUND</NS1:purposeCode>
+         <NS1:customerID>1</NS1:customerID>
+         <NS1:debitAccountNo>000190600002003</NS1:debitAccountNo>
+         <NS1:beneficiary>
+            <NS1:beneficiaryDetail>
+               <NS1:beneficiaryName>
+                  <NS1:fullName>DITTO</NS1:fullName>
+               </NS1:beneficiaryName>
+               <NS1:beneficiaryAddress>
+                  <NS1:address1>MALAD WEST</NS1:address1>
+               </NS1:beneficiaryAddress>
+               <NS1:beneficiaryContact/>
+               <NS1:beneficiaryAccountNo>301990600011174</NS1:beneficiaryAccountNo>
+               <NS1:beneficiaryIFSC>ABCD0123456</NS1:beneficiaryIFSC>
+            </NS1:beneficiaryDetail>
+         </NS1:beneficiary>
+         <NS1:transferType>NEFT</NS1:transferType>
+         <NS1:transferCurrencyCode>INR</NS1:transferCurrencyCode>
+         <NS1:transferAmount>300</NS1:transferAmount>
+         <NS1:remitterToBeneficiaryInfo>DITTO</NS1:remitterToBeneficiaryInfo>
+      </NS1:startTransfer>
+   </soap:Body>
+</soap:Envelope>]]></con:request><con:credentials><con:username>guest</con:username><con:password>qg123$#</con:password><con:selectedAuthProfile>Basic</con:selectedAuthProfile><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:authType>Global HTTP Settings</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.quantiguous.com/services/fundsTransferByCustomerService2/startTransferRequest"/><con:wsrmConfig version="1.2"/></con:call><con:call id="caebb069-d1d1-47a8-aa0e-ac4fd70e326a" name="apid - ditto - NEFT - sent_to_beneficiary"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>https://apidemo.quantiguous.com/fundsTransferByCustomerService2</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:NS1="http://www.quantiguous.com/services">
+   <soap:Header/>
+   <soap:Body>
+      <NS1:startTransfer>
+         <NS1:version>1</NS1:version>
+         <NS1:uniqueRequestNo>H12123</NS1:uniqueRequestNo>
+         <NS1:appID>QG0912</NS1:appID>
+         <!--Optional:-->
+         <NS1:purposeCode>REFUND</NS1:purposeCode>
+         <NS1:customerID>1</NS1:customerID>
+         <NS1:debitAccountNo>000190600002003</NS1:debitAccountNo>
+         <NS1:beneficiary>
+            <NS1:beneficiaryDetail>
+               <NS1:beneficiaryName>
+                  <NS1:fullName>DITTO</NS1:fullName>
+               </NS1:beneficiaryName>
+               <NS1:beneficiaryAddress>
+                  <NS1:address1>MALAD WEST</NS1:address1>
+               </NS1:beneficiaryAddress>
+               <NS1:beneficiaryContact/>
+               <NS1:beneficiaryAccountNo>551990600011174</NS1:beneficiaryAccountNo>
+               <NS1:beneficiaryIFSC>ABCD0123456</NS1:beneficiaryIFSC>
+            </NS1:beneficiaryDetail>
+         </NS1:beneficiary>
+         <NS1:transferType>NEFT</NS1:transferType>
+         <NS1:transferCurrencyCode>INR</NS1:transferCurrencyCode>
+         <NS1:transferAmount>3000</NS1:transferAmount>
+         <NS1:remitterToBeneficiaryInfo>DITTO</NS1:remitterToBeneficiaryInfo>
+      </NS1:startTransfer>
+   </soap:Body>
+</soap:Envelope>]]></con:request><con:credentials><con:username>guest</con:username><con:password>qg123$#</con:password><con:selectedAuthProfile>Basic</con:selectedAuthProfile><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:authType>Global HTTP Settings</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.quantiguous.com/services/fundsTransferByCustomerService2/startTransferRequest"/><con:wsrmConfig version="1.2"/></con:call><con:call id="1ee3b4d7-95e7-43cb-a0d3-08fee57ab548" name="apid - ditto - ANY - NEFT - completed"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>https://apidemo.quantiguous.com/fundsTransferByCustomerService2</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:NS1="http://www.quantiguous.com/services">
+   <soap:Header/>
+   <soap:Body>
+      <NS1:startTransfer>
+         <NS1:version>1</NS1:version>
+         <NS1:uniqueRequestNo>C12122</NS1:uniqueRequestNo>
+         <NS1:appID>QG0912</NS1:appID>
+         <!--Optional:-->
+         <NS1:purposeCode>REFUND</NS1:purposeCode>
+         <NS1:customerID>1</NS1:customerID>
+         <NS1:debitAccountNo>000190600002003</NS1:debitAccountNo>
+         <NS1:beneficiary>
+            <NS1:beneficiaryDetail>
+               <NS1:beneficiaryName>
+                  <NS1:fullName>DITTO</NS1:fullName>
+               </NS1:beneficiaryName>
+               <NS1:beneficiaryAddress>
+                  <NS1:address1>MALAD WEST</NS1:address1>
+               </NS1:beneficiaryAddress>
+               <NS1:beneficiaryContact/>
+               <NS1:beneficiaryAccountNo>751990600011174</NS1:beneficiaryAccountNo>
+               <NS1:beneficiaryIFSC>ABCD0123456</NS1:beneficiaryIFSC>
+            </NS1:beneficiaryDetail>
+         </NS1:beneficiary>
+         <NS1:transferType>ANY</NS1:transferType>
+         <NS1:transferCurrencyCode>INR</NS1:transferCurrencyCode>
+         <NS1:transferAmount>300</NS1:transferAmount>
+         <NS1:remitterToBeneficiaryInfo>DITTO</NS1:remitterToBeneficiaryInfo>
+      </NS1:startTransfer>
+   </soap:Body>
+</soap:Envelope>]]></con:request><con:credentials><con:username>guest</con:username><con:password>qg123$#</con:password><con:selectedAuthProfile>Basic</con:selectedAuthProfile><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:authType>Global HTTP Settings</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.quantiguous.com/services/fundsTransferByCustomerService2/startTransferRequest"/><con:wsrmConfig version="1.2"/></con:call><con:call id="84d28eda-db5d-4bca-942f-294bee1dec06" name="apid - ditto - ANY - IMPS - completed"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>https://apidemo.quantiguous.com/fundsTransferByCustomerService2</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:NS1="http://www.quantiguous.com/services">
+   <soap:Header/>
+   <soap:Body>
+      <NS1:startTransfer>
+         <NS1:version>1</NS1:version>
+         <NS1:uniqueRequestNo>B12122</NS1:uniqueRequestNo>
+         <NS1:appID>QG0912</NS1:appID>
+         <!--Optional:-->
+         <NS1:purposeCode>REFUND</NS1:purposeCode>
+         <NS1:customerID>1</NS1:customerID>
+         <NS1:debitAccountNo>000190600002003</NS1:debitAccountNo>
+         <NS1:beneficiary>
+            <NS1:beneficiaryDetail>
+               <NS1:beneficiaryName>
+                  <NS1:fullName>DITTO</NS1:fullName>
+               </NS1:beneficiaryName>
+               <NS1:beneficiaryAddress>
+                  <NS1:address1>MALAD WEST</NS1:address1>
+               </NS1:beneficiaryAddress>
+               <NS1:beneficiaryContact/>
+               <NS1:beneficiaryAccountNo>751990600011174</NS1:beneficiaryAccountNo>
+               <NS1:beneficiaryIFSC>HDFC0123456</NS1:beneficiaryIFSC>
+            </NS1:beneficiaryDetail>
+         </NS1:beneficiary>
+         <NS1:transferType>ANY</NS1:transferType>
+         <NS1:transferCurrencyCode>INR</NS1:transferCurrencyCode>
+         <NS1:transferAmount>300</NS1:transferAmount>
+         <NS1:remitterToBeneficiaryInfo>DITTO</NS1:remitterToBeneficiaryInfo>
+      </NS1:startTransfer>
+   </soap:Body>
+</soap:Envelope>]]></con:request><con:credentials><con:username>guest</con:username><con:password>qg123$#</con:password><con:selectedAuthProfile>Basic</con:selectedAuthProfile><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:authType>Global HTTP Settings</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.quantiguous.com/services/fundsTransferByCustomerService2/startTransferRequest"/><con:wsrmConfig version="1.2"/></con:call><con:call id="c81a5d26-9c90-4b74-bd11-9863db235598" name="apid - ditto - ANY - FT - completed"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>https://apidemo.quantiguous.com/fundsTransferByCustomerService2</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:NS1="http://www.quantiguous.com/services">
+   <soap:Header/>
+   <soap:Body>
+      <NS1:startTransfer>
+         <NS1:version>1</NS1:version>
+         <NS1:uniqueRequestNo>A12122</NS1:uniqueRequestNo>
+         <NS1:appID>QG0912</NS1:appID>
+         <!--Optional:-->
+         <NS1:purposeCode>REFUND</NS1:purposeCode>
+         <NS1:customerID>1</NS1:customerID>
+         <NS1:debitAccountNo>000190600002003</NS1:debitAccountNo>
+         <NS1:beneficiary>
+            <NS1:beneficiaryDetail>
+               <NS1:beneficiaryName>
+                  <NS1:fullName>DITTO</NS1:fullName>
+               </NS1:beneficiaryName>
+               <NS1:beneficiaryAddress>
+                  <NS1:address1>MALAD WEST</NS1:address1>
+               </NS1:beneficiaryAddress>
+               <NS1:beneficiaryContact/>
+               <NS1:beneficiaryAccountNo>751990600011174</NS1:beneficiaryAccountNo>
+               <NS1:beneficiaryIFSC>YESB0123456</NS1:beneficiaryIFSC>
             </NS1:beneficiaryDetail>
          </NS1:beneficiary>
          <NS1:transferType>ANY</NS1:transferType>
